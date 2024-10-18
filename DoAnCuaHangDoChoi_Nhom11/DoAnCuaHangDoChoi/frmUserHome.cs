@@ -16,5 +16,10 @@ namespace DoAnCuaHangDoChoi
         {
             InitializeComponent();
         }
+
+        private void flpNV_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
