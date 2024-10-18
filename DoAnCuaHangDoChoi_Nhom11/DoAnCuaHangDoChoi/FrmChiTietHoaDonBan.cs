@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCuaHangDoChoi
 {
-    public partial class FrmChiTietHoaDonBan : Form
+    public partial class frmChiTietHoaDonBan : Form
     {
-        public FrmChiTietHoaDonBan()
+        public frmChiTietHoaDonBan()
         {
             InitializeComponent();
         }
