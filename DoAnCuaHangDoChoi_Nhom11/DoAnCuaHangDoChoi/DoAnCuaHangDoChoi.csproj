@@ -52,11 +52,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminHome.Designer.cs">
+      <DependentUpon>frmAdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiaCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiaCa.Designer.cs">
+      <DependentUpon>frmChiaCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmUserHome.Designer.cs">
       <DependentUpon>frmUserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXemCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXemCa.Designer.cs">
+      <DependentUpon>frmXemCa.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
