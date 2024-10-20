@@ -14,7 +14,7 @@ namespace DataAccessLayer
         SqlCommand cmd = null;
         SqlDataAdapter adp = null;
 
-        string strConnect = "DESKTOP-R8CP7IB;Initial Catalog=KetNoiCSDL;Integrated Security=True;Encrypt=True";
+        string strConnect = "DESKTOP-NC8HSHQ;Initial Catalog=KetNoiCSDL;Integrated Security=True;Encrypt=True";
 
         public DAL()
         {
