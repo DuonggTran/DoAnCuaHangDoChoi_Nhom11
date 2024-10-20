@@ -14,14 +14,12 @@ namespace DataAccessLayer
         SqlCommand cmd = null;
         SqlDataAdapter adp = null;
 
-        string strConnect = "DESKTOP-R8CP7IB;Initial Catalog=KetNoiCSDL;Integrated Security=True;Encrypt=True";
-
+        string strConnect = "DUONGTRAN;Initial Catalog = CuaHangDoChoi; User ID = sa; Password=***********;Trust Server Certificate=True";
         public DAL()
         {
             cnn = new SqlConnection(strConnect);
             cmd = cnn.CreateCommand();
         }
-
         // Thủ tục lấy danh sách
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct)
         {
@@ -36,7 +34,6 @@ namespace DataAccessLayer
             adp.Fill(ds);
             return ds;
         }
-
         // Insert, Update, Delete
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
         {
@@ -87,7 +84,6 @@ namespace DataAccessLayer
 
             return result;
         }
-
         public string ExecuteQueryXML(string strSQL, CommandType ct, params SqlParameter[] p)
         {
             cmd.CommandText = strSQL;
