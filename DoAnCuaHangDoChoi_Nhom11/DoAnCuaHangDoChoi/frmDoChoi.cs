@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BusinessLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,14 +11,16 @@ using System.Windows.Forms;
 
 namespace DoAnCuaHangDoChoi
 {
-    public partial class frmUserHome : Form
+    public partial class frmDoChoi : Form
     {
-        public frmUserHome()
+
+        DBDoChoi dcbusiness = new DBDoChoi();
+        public frmDoChoi()
         {
             InitializeComponent();
         }
 
-        private void flpNV_Paint(object sender, PaintEventArgs e)
+        private void frmDoChoi_Load(object sender, EventArgs e)
         {
 
         }
