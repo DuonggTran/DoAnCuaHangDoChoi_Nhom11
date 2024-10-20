@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="FastReport.Compat, Version=2025.1.0.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Compat.2025.1.0\lib\net462\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.DataVisualization, Version=2025.1.0.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.DataVisualization.2025.1.0\lib\net462\FastReport.DataVisualization.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -59,6 +65,18 @@
     <Compile Include="FrmChiTietHoaDonBan.Designer.cs">
       <DependentUpon>FrmChiTietHoaDonBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmDoChoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoChoi.Designer.cs">
+      <DependentUpon>frmDoChoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThongKe.Designer.cs">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmUserHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,8 +85,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDoChoi.resx">
+      <DependentUpon>frmDoChoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongKe.resx">
+      <DependentUpon>frmThongKe.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmUserHome.resx">
       <DependentUpon>frmUserHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmChiTietHoaDonBan.resx">
       <DependentUpon>FrmChiTietHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,6 +107,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +126,22 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogicLayer\BusinessLogicLayer.csproj">
+      <Project>{0bf3ff01-9d79-4b9b-af33-c081fb8e51a0}</Project>
+      <Name>BusinessLogicLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj">
+      <Project>{3a2d90ed-c937-44d0-a201-1995e954f1b1}</Project>
+      <Name>DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\categories %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
