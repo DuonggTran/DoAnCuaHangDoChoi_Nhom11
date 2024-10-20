@@ -36,6 +36,8 @@
             this.dgvNhaSanXuat = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtThongTin = new System.Windows.Forms.TextBox();
+            this.btnTimMa = new System.Windows.Forms.Button();
+            this.btnTimTen = new System.Windows.Forms.Button();
             this.dgvThongTin = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dgvLoaiDoChoi = new System.Windows.Forms.DataGridView();
@@ -47,8 +49,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvDoChoi = new System.Windows.Forms.DataGridView();
-            this.btnTimMa = new System.Windows.Forms.Button();
-            this.btnTimTen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.txtNhaSanXuat = new System.Windows.Forms.TextBox();
@@ -166,6 +166,40 @@
             this.txtThongTin.Size = new System.Drawing.Size(214, 36);
             this.txtThongTin.TabIndex = 18;
             // 
+            // btnTimMa
+            // 
+            this.btnTimMa.BackColor = System.Drawing.Color.White;
+            this.btnTimMa.FlatAppearance.BorderSize = 0;
+            this.btnTimMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimMa.Image = ((System.Drawing.Image)(resources.GetObject("btnTimMa.Image")));
+            this.btnTimMa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimMa.Location = new System.Drawing.Point(561, 206);
+            this.btnTimMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTimMa.Name = "btnTimMa";
+            this.btnTimMa.Size = new System.Drawing.Size(178, 43);
+            this.btnTimMa.TabIndex = 17;
+            this.btnTimMa.Text = "Mã";
+            this.btnTimMa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimMa.UseVisualStyleBackColor = false;
+            // 
+            // btnTimTen
+            // 
+            this.btnTimTen.BackColor = System.Drawing.Color.White;
+            this.btnTimTen.FlatAppearance.BorderSize = 0;
+            this.btnTimTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimTen.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTen.Image")));
+            this.btnTimTen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimTen.Location = new System.Drawing.Point(304, 206);
+            this.btnTimTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTimTen.Name = "btnTimTen";
+            this.btnTimTen.Size = new System.Drawing.Size(178, 43);
+            this.btnTimTen.TabIndex = 16;
+            this.btnTimTen.Text = "Tên";
+            this.btnTimTen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimTen.UseVisualStyleBackColor = false;
+            // 
             // dgvThongTin
             // 
             this.dgvThongTin.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -267,6 +301,7 @@
             this.btnThem.TabIndex = 19;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click_1);
             // 
             // groupBox1
             // 
@@ -291,40 +326,6 @@
             this.dgvDoChoi.RowTemplate.Height = 24;
             this.dgvDoChoi.Size = new System.Drawing.Size(724, 234);
             this.dgvDoChoi.TabIndex = 0;
-            // 
-            // btnTimMa
-            // 
-            this.btnTimMa.BackColor = System.Drawing.Color.White;
-            this.btnTimMa.FlatAppearance.BorderSize = 0;
-            this.btnTimMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimMa.Image = ((System.Drawing.Image)(resources.GetObject("btnTimMa.Image")));
-            this.btnTimMa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimMa.Location = new System.Drawing.Point(561, 206);
-            this.btnTimMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTimMa.Name = "btnTimMa";
-            this.btnTimMa.Size = new System.Drawing.Size(178, 43);
-            this.btnTimMa.TabIndex = 17;
-            this.btnTimMa.Text = "Mã";
-            this.btnTimMa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimMa.UseVisualStyleBackColor = false;
-            // 
-            // btnTimTen
-            // 
-            this.btnTimTen.BackColor = System.Drawing.Color.White;
-            this.btnTimTen.FlatAppearance.BorderSize = 0;
-            this.btnTimTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimTen.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTen.Image")));
-            this.btnTimTen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimTen.Location = new System.Drawing.Point(304, 206);
-            this.btnTimTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTimTen.Name = "btnTimTen";
-            this.btnTimTen.Size = new System.Drawing.Size(178, 43);
-            this.btnTimTen.TabIndex = 16;
-            this.btnTimTen.Text = "Tên";
-            this.btnTimTen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimTen.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
