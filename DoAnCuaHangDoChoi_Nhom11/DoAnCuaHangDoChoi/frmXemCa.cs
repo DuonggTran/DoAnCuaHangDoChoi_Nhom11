@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace DoAnCuaHangDoChoi
 {
-    public partial class frmUserHome : Form
+    public partial class frmXemCa : Form
     {
-        public frmUserHome()
+        public frmXemCa()
         {
             InitializeComponent();
-        }
-
-        private void flpNV_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
