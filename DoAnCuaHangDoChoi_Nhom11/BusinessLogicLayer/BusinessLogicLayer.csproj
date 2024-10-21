@@ -48,14 +48,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+   
     <Compile Include="DBDanhMucDoChoi.cs" />
     <Compile Include="DBNganKe.cs" />
     <Compile Include="DBNhaSanXuat.cs" />
     <Compile Include="DBTaiKhoan.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+   
     <Compile Include="DBChiTietHoaDonBan.cs" />
     <Compile Include="DBChiTietHoaDonNhap.cs" />
     <Compile Include="DBHoaDonBan.cs" />
