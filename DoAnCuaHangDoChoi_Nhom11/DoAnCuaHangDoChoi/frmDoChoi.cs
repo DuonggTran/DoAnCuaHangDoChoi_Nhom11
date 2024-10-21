@@ -135,34 +135,7 @@ namespace DoAnCuaHangDoChoi
                 this.Close();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            // Kich hoạt biến Them 
-            Them = true;
 
-            // Xóa trống các đối tượng trong Panel 
-            this.panel.ResetText();
-            this.panel.Enabled = true;
-
-            //this.dtp.ResetText();
-            this.txtMaNganKe.ResetText();
-            this.cbxMaLoaiDoChoi.ResetText();
-            this.txtTenLoaiDoChoi.ResetText();
-            this.txtMaDoChoi.ResetText();
-            this.txtTenDoChoi.ResetText();
-            this.txtGiaTien.ResetText();
-            this.txtNhaSanXuat.ResetText();
-
-            // Cho thao tác trên các nút Lưu  
-            this.btnLuu.Enabled = true;
-
-            // Không cho thao tác trên các nút Thêm / Trở về 
-            this.btnThem.Enabled = false;
-            this.btnTroVe.Enabled = false;
-
-            // Đưa con trỏ đến TextField txtMaLoaiDoChoi
-            this.txtMaDoChoi.Focus();
-        }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -428,7 +401,31 @@ namespace DoAnCuaHangDoChoi
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
+            // Kich hoạt biến Them 
+            Them = true;
 
+            // Xóa trống các đối tượng trong Panel 
+            this.panel.ResetText();
+            this.panel.Enabled = true;
+
+            //this.dtp.ResetText();
+            this.txtMaNganKe.ResetText();
+            this.cbxMaLoaiDoChoi.ResetText();
+            this.txtTenLoaiDoChoi.ResetText();
+            this.txtMaDoChoi.ResetText();
+            this.txtTenDoChoi.ResetText();
+            this.txtGiaTien.ResetText();
+            this.txtNhaSanXuat.ResetText();
+
+            // Cho thao tác trên các nút Lưu  
+            this.btnLuu.Enabled = true;
+
+            // Không cho thao tác trên các nút Thêm / Trở về 
+            this.btnThem.Enabled = false;
+            this.btnTroVe.Enabled = false;
+
+            // Đưa con trỏ đến TextField txtMaLoaiDoChoi
+            this.txtMaDoChoi.Focus();
         }
     }
 }
