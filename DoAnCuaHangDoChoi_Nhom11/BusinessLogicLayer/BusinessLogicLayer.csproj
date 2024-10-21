@@ -48,12 +48,20 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+   
+=======
+>>>>>>> master
     <Compile Include="DBDanhMucDoChoi.cs" />
     <Compile Include="DBNganKe.cs" />
     <Compile Include="DBNhaSanXuat.cs" />
     <Compile Include="DBTaiKhoan.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+   
+=======
+>>>>>>> master
     <Compile Include="DBChiTietHoaDonBan.cs" />
     <Compile Include="DBChiTietHoaDonNhap.cs" />
     <Compile Include="DBHoaDonBan.cs" />
