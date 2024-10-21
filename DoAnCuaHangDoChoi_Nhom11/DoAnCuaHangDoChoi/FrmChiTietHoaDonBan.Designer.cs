@@ -1,5 +1,6 @@
 ﻿namespace DoAnCuaHangDoChoi
 {
+     //sua
     partial class frmChiTietHoaDonBan
     {
         /// <summary>
