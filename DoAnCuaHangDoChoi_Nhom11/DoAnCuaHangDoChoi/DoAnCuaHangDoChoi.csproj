@@ -282,9 +282,6 @@
     <EmbeddedResource Include="frmUserHome.resx">
       <DependentUpon>frmUserHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmChiTietHoaDonBan.resx">
-      <DependentUpon>FrmChiTietHoaDonBan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
