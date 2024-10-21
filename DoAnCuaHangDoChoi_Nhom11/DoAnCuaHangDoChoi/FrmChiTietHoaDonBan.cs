@@ -14,6 +14,7 @@ namespace DoAnCuaHangDoChoi
     {
         public frmChiTietHoaDonBan()
         {
+        //sua
             InitializeComponent();
         }
     }
