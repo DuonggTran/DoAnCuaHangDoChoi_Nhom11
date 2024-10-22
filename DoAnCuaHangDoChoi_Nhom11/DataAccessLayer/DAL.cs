@@ -21,7 +21,6 @@ namespace DataAccessLayer
             cnn = new SqlConnection(strConnect);
             cmd = cnn.CreateCommand();
         }
-
         // Thủ tục lấy danh sách
         public DataSet ExecuteQueryDataSet(string strSQL, CommandType ct)
         {
@@ -36,7 +35,6 @@ namespace DataAccessLayer
             adp.Fill(ds);
             return ds;
         }
-
         // Insert, Update, Delete
         public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error, params SqlParameter[] param)
         {
@@ -87,7 +85,6 @@ namespace DataAccessLayer
 
             return result;
         }
-
         public string ExecuteQueryXML(string strSQL, CommandType ct, params SqlParameter[] p)
         {
             cmd.CommandText = strSQL;
