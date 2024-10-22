@@ -84,7 +84,7 @@ namespace DoAnCuaHangDoChoi
         {
             // Kich hoạt biến Them 
             Them = true;
-
+            this.txtMaNganKe.Enabled = true;
             // Xóa trống các đối tượng trong Panel 
             this.panel.ResetText();
             this.panel.Enabled = true;

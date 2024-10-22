@@ -171,6 +171,7 @@
             this.dgvDanhSachNhaSanXuat.RowTemplate.Height = 24;
             this.dgvDanhSachNhaSanXuat.Size = new System.Drawing.Size(476, 173);
             this.dgvDanhSachNhaSanXuat.TabIndex = 0;
+            this.dgvDanhSachNhaSanXuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachNhaSanXuat_CellClick);
             // 
             // label3
             // 
@@ -234,7 +235,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.groupBox1.Controls.Add(this.dgvDanhSachNhaSanXuat);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(2, 2);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
