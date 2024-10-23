@@ -155,6 +155,9 @@ namespace DoAnCuaHangDoChoi
             this.btnXoa.Enabled = false;
             // Đưa con trỏ đến TextField txtMaLoaiDoChoi
             this.txtMaBan.Focus();
+            this.txtMaNhanVien.Enabled = false;
+            this.txtNgayBan.Enabled = false;
+            this.txtMaHoaDonBan.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -219,6 +222,9 @@ namespace DoAnCuaHangDoChoi
             // Đưa con trỏ đến TextField txtMaBan
             this.txtMaBan.Enabled = false;
             this.txtMaHoaDonBan.Focus();
+            this.txtNgayBan.Enabled = false;
+            this.txtMaNhanVien.Enabled = false;
+            this.txtMaHoaDonBan.Enabled = false;
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
@@ -244,6 +250,7 @@ namespace DoAnCuaHangDoChoi
             this.btnHuyBo.Enabled = false;
             this.panel.Enabled = false;
             dgvDanhSachChiTietHoaDonBan_CellClick(null, null);
+            this.txtMaBan.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -263,6 +270,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm chi tiết hóa đơn bán thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Lỗi Không Thể Thêm Chi Tiết Hóa Đơn Do Đã Tồn Tại Mã Bán");
+                    }    
 
                 }
                 catch (SqlException)
@@ -288,7 +299,14 @@ namespace DoAnCuaHangDoChoi
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
                 }
+                else
+                {
+                    MessageBox.Show("Không Thể Cập Nhập!");
+                }
             }
+            this.btnReLoad.Enabled = true;
+            this.btnXoa.Enabled = true;
+            this.txtMaHoaDonBan.Enabled = true;
         }
 
         private void btnReLoad_Click(object sender, EventArgs e)
@@ -297,24 +315,24 @@ namespace DoAnCuaHangDoChoi
             LoadHoaDonBan();
         }
 
-        //private void dgvDanhSachHoaDonBan_CellClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    try
-        //    {
-        //        // Thứ tự dòng hiện hành 
-        //        int r = dgvDanhSachHoaDonBan.CurrentCell.RowIndex;
-        //        // Chuyển thông tin lên panel 
-        //        this.txtMaHoaDonBan.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[0].Value.ToString();
-        //        this.txtNgayBan.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[1].Value.ToString();
-        //        this.txtMaNhanVien.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[2].Value.ToString();
-        //    }
-        //    catch
-        //    {
-        //        this.txtMaHoaDonBan.ResetText();
-        //        this.txtNgayBan.ResetText();
-        //        this.txtMaNhanVien.ResetText();
-        //    }
-        //}
+        private void dgvDanhSachHoaDonBan_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                // Thứ tự dòng hiện hành 
+                int r = dgvDanhSachHoaDonBan.CurrentCell.RowIndex;
+                // Chuyển thông tin lên panel 
+                this.txtMaHoaDonBan.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[0].Value.ToString();
+                this.txtNgayBan.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[1].Value.ToString();
+                this.txtMaNhanVien.Text = dgvDanhSachHoaDonBan.Rows[r].Cells[2].Value.ToString();
+            }
+            catch
+            {
+                this.txtMaHoaDonBan.ResetText();
+                this.txtNgayBan.ResetText();
+                this.txtMaNhanVien.ResetText();
+            }
+        }
 
     }
 }

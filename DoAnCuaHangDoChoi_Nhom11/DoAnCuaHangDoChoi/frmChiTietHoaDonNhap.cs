@@ -127,12 +127,17 @@ namespace DoAnCuaHangDoChoi
 
             // Cho thao tác trên các nút Lưu  
             this.btnLuu.Enabled = true;
+            this.btnHuyBo.Enabled = true;
+
 
             // Không cho thao tác trên các nút Thêm / Trở về 
             this.btnThem.Enabled = false;
             this.btnTroVe.Enabled = false;
             // Đưa con trỏ đến TextField txtMaLoaiDoChoi
             this.txtMaNhap.Focus();
+            this.txtMaNhanVien.Enabled = false;
+            this.txtNgayNhap.Enabled = false;
+            this.txtMaHoaDonNhap.Enabled = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -197,6 +202,8 @@ namespace DoAnCuaHangDoChoi
             // Đưa con trỏ đến TextField txtMaNhap
             this.txtMaHoaDonNhap.Enabled = false;
             this.txtNgayNhap.Focus();
+            this.txtNgayNhap.Enabled = false;
+            this.txtMaNhanVien.Enabled = false;
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
@@ -222,6 +229,7 @@ namespace DoAnCuaHangDoChoi
             this.btnHuyBo.Enabled = false;
             this.panel.Enabled = false;
             dgvDanhSachChiTietHoaDonNhap_CellClick(null, null);
+            this.txtMaNhap.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -240,6 +248,10 @@ namespace DoAnCuaHangDoChoi
                         LoadChiTietHoaDonNhap();
                         // Thông báo 
                         MessageBox.Show("Đã thêm chi tiết hóa đơn nhập thành công!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi Không Thể Thêm Chi Tiết Hóa Đơn Do Đã Tồn Tại Mã Nhập");
                     }
 
                 }
@@ -266,7 +278,14 @@ namespace DoAnCuaHangDoChoi
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
                 }
+                else
+                {
+                    MessageBox.Show("Không Thể Cập Nhập!");
+                }
             }
+            this.btnReLoad.Enabled = true;
+            this.btnXoa.Enabled = true;
+            this.txtMaHoaDonNhap.Enabled = true;
         }
 
         private void btnReLoad_Click(object sender, EventArgs e)

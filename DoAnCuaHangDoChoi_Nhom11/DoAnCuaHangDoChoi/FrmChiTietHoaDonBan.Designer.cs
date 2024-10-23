@@ -421,7 +421,7 @@
             this.dgvDanhSachHoaDonBan.RowTemplate.Height = 24;
             this.dgvDanhSachHoaDonBan.Size = new System.Drawing.Size(338, 203);
             this.dgvDanhSachHoaDonBan.TabIndex = 0;
-            //this.dgvDanhSachHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDonBan_CellClick);
+            this.dgvDanhSachHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDonBan_CellClick);
             // 
             // label11
             // 
