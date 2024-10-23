@@ -39,10 +39,13 @@ namespace DoAnCuaHangDoChoi
             try
             {
                 // Đưa dữ liệu lên DataGridView  
-                this.dgvDoChoi.DataSource = dcbusiness.LayDoChoi().Tables[0];
+                // this.dgvDoChoi.DataSource = dcbusiness.LayDoChoi().Tables[0];
+
+                this.dgvDoChoi.DataSource = dcbusiness.LayDoChoiVaDanhMuc().Tables[0];
                 this.dgvDoChoi.Columns[3].Visible = false;
                 this.dgvDoChoi.Columns[4].Visible = false;
                 this.dgvDoChoi.Columns[5].Visible = false;
+                this.dgvDoChoi.Columns[6].Visible = false;
                 // Thay đổi độ rộng cột 
                 this.dgvDoChoi.AutoResizeColumns();
                 // Đặt tên cột
@@ -73,9 +76,9 @@ namespace DoAnCuaHangDoChoi
                 //
                 dgvDoChoi_CellClick(null, null);
             }
-            catch (SqlException)
+            catch (Exception ex)
             {
-                MessageBox.Show("Không lấy được nội dung đồ chơi. Đã xảy ra lỗi!");
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -135,154 +138,6 @@ namespace DoAnCuaHangDoChoi
                 this.Close();
         }
 
-
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            bool kq = false;
-            string err = "";
-            try
-            {
-                // Lấy thứ tự record hiện hành 
-                int r = dgvDoChoi.CurrentCell.RowIndex;
-                // Lấy MaDoChoi của record hiện hành 
-                string strMaDoChoi =
-                dgvDoChoi.Rows[r].Cells[0].Value.ToString();
-                // Hiện thông báo xác nhận việc xóa mẫu tin 
-                // Khai báo biến traloi 
-                DialogResult traloi;
-                // Hiện hộp thoại hỏi đáp 
-                traloi = MessageBox.Show("Bạn có chắc muốn xoá đồ chơi này không?", "Trả lời",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                // Kiểm tra có nhắp chọn nút Ok không? 
-                if (traloi == DialogResult.Yes)
-                {
-                    // Thực hiện câu lệnh SQL 
-                    kq = dcbusiness.XoaDoChoi(ref err, txtMaDoChoi.Text);
-                    if (kq)
-                    {
-                        // Cập nhật lại DataGridView 
-                        LoadDoChoi();
-                        // Thông báo 
-                        MessageBox.Show("Đã xóa thành công!");
-                    }
-                }
-                else
-                {
-
-                    // Thông báo 
-                    MessageBox.Show("Huỷ bỏ việc xoá đồ chơi này!");
-                }
-            }
-            catch (SqlException)
-            {
-                MessageBox.Show("Không xóa được đồ chơi này. Lỗi rồi!");
-            }
-        }
-
-        private void btnCapNhat_Click(object sender, EventArgs e)
-        {
-            // Kích hoạt biến Sửa 
-            Them = false;
-            // Cho phép thao tác trên Panel 
-            this.panel.Enabled = true;
-            dgvDoChoi_CellClick(null, null);
-            // Cho thao tác trên các nút Lưu / Hủy / Panel 
-            this.btnLuu.Enabled = true;
-            this.btnHuyBo.Enabled = true;
-            this.panel.Enabled = true;
-            // Không cho thao tác trên các nút Thêm / Xóa / Thoát 
-            this.btnThem.Enabled = false;
-            this.btnCapNhat.Enabled = false;
-            this.btnXoa.Enabled = false;
-            this.btnTroVe.Enabled = false;
-            this.btnReLoad.Enabled = false;
-            // Đưa con trỏ đến TextField txtMaDoChoi
-            this.txtMaDoChoi.Enabled = false;
-        }
-
-        private void btnHuyBo_Click(object sender, EventArgs e)
-        {
-            // Xóa trống các đối tượng 
-            this.txtMaNganKe.ResetText();
-            this.cbxMaLoaiDoChoi.ResetText();
-            this.txtTenLoaiDoChoi.ResetText();
-            this.txtMaDoChoi.ResetText();
-            this.txtTenDoChoi.ResetText();
-            this.txtGiaTien.ResetText();
-            this.txtNhaSanXuat.ResetText();
-
-            this.panel.ResetText();
-
-            // Cho thao tác trên các nút Thêm / Sửa / Xóa / Thoát / Reload
-            this.btnThem.Enabled = true;
-            this.btnCapNhat.Enabled = true;
-            this.btnXoa.Enabled = true;
-            this.btnTroVe.Enabled = true;
-            this.btnReLoad.Enabled = true;
-            // Không cho thao tác trên các nút Lưu / Hủy / Panel 
-            this.btnLuu.Enabled = false;
-            this.btnHuyBo.Enabled = false;
-            this.panel.Enabled = false;
-            dgvDoChoi_CellClick(null, null);
-        }
-
-        private void btnLuu_Click(object sender, EventArgs e)
-        {
-            bool kq = false;
-            string err = "";
-            // Thêm dữ liệu 
-            if (Them)
-            {
-                try
-                {
-                    kq = dcbusiness.ThemDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
-                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
-                    if (kq)
-                    {
-                        // Load lại dữ liệu trên DataGridView 
-                        LoadDoChoi();
-                        // Thông báo 
-                        MessageBox.Show("Đã thêm đồ chơi thành công!");
-                    }
-
-                }
-                catch (SqlException)
-                {
-                    err = "Không thêm được đồ chơi. Lỗi rồi!";
-                    MessageBox.Show(err);
-                }
-            }
-            else
-            {
-                kq = false;
-                // Thứ tự dòng hiện hành 
-                int r = dgvDoChoi.CurrentCell.RowIndex;
-                // MaDoChoi hiện hành 
-                string strMaDoChoi =
-                dgvDoChoi.Rows[r].Cells[0].Value.ToString();
-                // Câu lệnh SQL 
-                kq = dcbusiness.CapNhatDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
-                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
-                if (kq)
-                {
-                    // Load lại dữ liệu trên DataGridView 
-                    LoadDoChoi();
-                    // Thông báo 
-                    MessageBox.Show("Đã cập nhật xong!");
-                }
-            }
-        }
-
-        private void btnReLoad_Click(object sender, EventArgs e)
-        {
-            LoadDoChoi();
-            LoadDanhMucDoChoi();
-            LoadNhaSanXuat();
-            LoadNganKe();
-            LoadComboboxMaLoaiDoChoi();
-        }
-
         private void dgvDoChoi_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             try
@@ -293,11 +148,12 @@ namespace DoAnCuaHangDoChoi
                 this.txtTenDoChoi.Text = dgvDoChoi.Rows[r].Cells[1].Value.ToString();
                 this.txtGiaTien.Text = dgvDoChoi.Rows[r].Cells[2].Value.ToString();
                 this.cbxMaLoaiDoChoi.Text = dgvDoChoi.Rows[r].Cells[3].Value.ToString();
-                this.txtNhaSanXuat.Text = dgvDoChoi.Rows[r].Cells[4].Value.ToString();
-                this.txtMaNganKe.Text = dgvDoChoi.Rows[r].Cells[5].Value.ToString();
-                //this.txtTenLoaiDoChoi 
+                this.txtTenLoaiDoChoi.Text = dgvDoChoi.Rows[r].Cells[4].Value.ToString();
+                this.txtNhaSanXuat.Text = dgvDoChoi.Rows[r].Cells[5].Value.ToString();
+                this.txtMaNganKe.Text = dgvDoChoi.Rows[r].Cells[6].Value.ToString();
+              
 
-                //this.cbxMaLoaiDoChoi.Text = dcbusiness.LayMaLoaiDoChoi_DoChoi(txtMaDoChoi.Text);              
+
             }
             catch   //TH click row ko có data
             {
@@ -377,27 +233,7 @@ namespace DoAnCuaHangDoChoi
             this.txtMaNganKe.Text = dgvNganKe.Rows[r].Cells[0].Value.ToString();
         }
 
-        private void btnTimTen_Click(object sender, EventArgs e)
-        {
-            dgvThongTin.Refresh();
-            this.dgvThongTin.DataSource = dcbusiness.TimDoChoiTheoTen(txtThongTin.Text).Tables[0];
-        }
-
-        private void btnTimMa_Click(object sender, EventArgs e)
-        {
-            dgvThongTin.Refresh();
-            this.dgvThongTin.DataSource = dcbusiness.TimDoChoiTheoMa(txtThongTin.Text).Tables[0];
-        }
-
-        private void btnDaBan_Click(object sender, EventArgs e)
-        {
-            dgvDoChoi.DataSource = dcbusiness.DoChoiDaBan().Tables[0];
-        }
-
-        private void btnChuaBan_Click(object sender, EventArgs e)
-        {
-            dgvDoChoi.DataSource = dcbusiness.DoChoiChuaBan().Tables[0];
-        }
+       
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
@@ -426,6 +262,198 @@ namespace DoAnCuaHangDoChoi
 
             // Đưa con trỏ đến TextField txtMaLoaiDoChoi
             this.txtMaDoChoi.Focus();
+        }
+
+        private void btnXoa_Click_1(object sender, EventArgs e)
+        {
+            bool kq = false;
+            string err = "";
+            try
+            {
+                // Lấy thứ tự record hiện hành 
+                int r = dgvDoChoi.CurrentCell.RowIndex;
+                // Lấy MaDoChoi của record hiện hành 
+                string strMaDoChoi =
+                dgvDoChoi.Rows[r].Cells[0].Value.ToString();
+                // Hiện thông báo xác nhận việc xóa mẫu tin 
+                // Khai báo biến traloi 
+                DialogResult traloi;
+                // Hiện hộp thoại hỏi đáp 
+                traloi = MessageBox.Show("Bạn có chắc muốn xoá đồ chơi này không?", "Trả lời",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                // Kiểm tra có nhắp chọn nút Ok không? 
+                if (traloi == DialogResult.Yes)
+                {
+                    // Thực hiện câu lệnh SQL 
+                    kq = dcbusiness.XoaDoChoi(ref err, txtMaDoChoi.Text);
+                    if (kq)
+                    {
+                        // Cập nhật lại DataGridView 
+                        LoadDoChoi();
+                        // Thông báo 
+                        MessageBox.Show("Đã xóa thành công!");
+                    }
+                }
+                else
+                {
+
+                    // Thông báo 
+                    MessageBox.Show("Huỷ bỏ việc xoá đồ chơi này!");
+                }
+            }
+            catch (SqlException)
+            {
+                MessageBox.Show("Không xóa được đồ chơi này. Lỗi rồi!");
+            }
+        }
+
+        private void btnCapNhat_Click_1(object sender, EventArgs e)
+        {
+            // Kích hoạt biến Sửa 
+            Them = false;
+            // Cho phép thao tác trên Panel 
+            this.panel.Enabled = true;
+            dgvDoChoi_CellClick(null, null);
+            // Cho thao tác trên các nút Lưu / Hủy / Panel 
+            this.btnLuu.Enabled = true;
+            this.btnHuyBo.Enabled = true;
+            this.panel.Enabled = true;
+            // Không cho thao tác trên các nút Thêm / Xóa / Thoát 
+            this.btnThem.Enabled = false;
+            this.btnCapNhat.Enabled = false;
+            this.btnXoa.Enabled = false;
+            this.btnTroVe.Enabled = false;
+            this.btnReLoad.Enabled = false;
+            // Đưa con trỏ đến TextField txtMaDoChoi
+            this.txtMaDoChoi.Enabled = false;
+        }
+
+        private void btnHuyBo_Click_1(object sender, EventArgs e)
+        {
+            // Xóa trống các đối tượng 
+            this.txtMaNganKe.ResetText();
+            this.cbxMaLoaiDoChoi.ResetText();
+            this.txtTenLoaiDoChoi.ResetText();
+            this.txtMaDoChoi.ResetText();
+            this.txtTenDoChoi.ResetText();
+            this.txtGiaTien.ResetText();
+            this.txtNhaSanXuat.ResetText();
+
+            this.panel.ResetText();
+
+            // Cho thao tác trên các nút Thêm / Sửa / Xóa / Thoát / Reload
+            this.btnThem.Enabled = true;
+            this.btnCapNhat.Enabled = true;
+            this.btnXoa.Enabled = true;
+            this.btnTroVe.Enabled = true;
+            this.btnReLoad.Enabled = true;
+            // Không cho thao tác trên các nút Lưu / Hủy / Panel 
+            this.btnLuu.Enabled = false;
+            this.btnHuyBo.Enabled = false;
+            this.panel.Enabled = false;
+            dgvDoChoi_CellClick(null, null);
+        }
+
+        private void btnLuu_Click_1(object sender, EventArgs e)
+        {
+            bool kq = false;
+            string err = "";
+            // Thêm dữ liệu 
+            if (Them)
+            {
+                try
+                {
+                    kq = dcbusiness.ThemDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
+                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
+                    if (kq)
+                    {
+                        // Load lại dữ liệu trên DataGridView 
+                        LoadDoChoi();
+                        // Thông báo 
+                        MessageBox.Show("Đã thêm đồ chơi thành công!");
+                    }
+
+                }
+                catch (SqlException)
+                {
+                    err = "Không thêm được đồ chơi. Lỗi rồi!";
+                    MessageBox.Show(err);
+                }
+            }
+            else
+            {
+                kq = false;
+                // Thứ tự dòng hiện hành 
+                int r = dgvDoChoi.CurrentCell.RowIndex;
+                // MaDoChoi hiện hành 
+                string strMaDoChoi =
+                dgvDoChoi.Rows[r].Cells[0].Value.ToString();
+                // Câu lệnh SQL 
+                kq = dcbusiness.CapNhatDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
+                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
+                if (kq)
+                {
+                    // Load lại dữ liệu trên DataGridView 
+                    LoadDoChoi();
+                    // Thông báo 
+                    MessageBox.Show("Đã cập nhật xong!");
+                }
+            }
+        }
+
+        private void btnDaBan_Click_1(object sender, EventArgs e)
+        {
+            dgvDoChoi.DataSource = dcbusiness.DoChoiDaBan().Tables[0];
+        }
+
+        private void btnChuaBan_Click_1(object sender, EventArgs e)
+        {
+            dgvDoChoi.DataSource = dcbusiness.DoChoiChuaBan().Tables[0];
+        }
+
+ 
+
+        private void btnTroVe_Click_1(object sender, EventArgs e)
+        {
+            // Khai báo biến traloi 
+            DialogResult traloi;
+            // Hiện hộp thoại hỏi đáp 
+            traloi = MessageBox.Show("Bạn có muốn trở về trang chủ?", "Trả lời",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            // Kiểm tra có nhắp chọn nút Ok không? 
+            if (traloi == DialogResult.OK)
+                this.Close();
+        }
+
+        private void btnTimTen_Click_1(object sender, EventArgs e)
+        {
+            dgvThongTin.Refresh();
+            this.dgvThongTin.DataSource = dcbusiness.TimDoChoiTheoTen(txtThongTin.Text).Tables[0];
+        }
+
+        private void btnReLoad_Click_1(object sender, EventArgs e)
+        {
+            LoadDoChoi();
+            LoadDanhMucDoChoi();
+            LoadNhaSanXuat();
+            LoadNganKe();
+            LoadComboboxMaLoaiDoChoi();
+        }
+
+        private void btnTimMa_Click_1(object sender, EventArgs e)
+        {
+            dgvThongTin.Refresh();
+            this.dgvThongTin.DataSource = dcbusiness.TimDoChoiTheoMa(txtThongTin.Text).Tables[0];
+        }
+
+        private void dgvNganKe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dgvDoChoi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
