@@ -70,7 +70,7 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(811, 537);
             this.panel1.TabIndex = 1;
@@ -81,12 +81,13 @@
             this.btnReLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnReLoad.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnReLoad.Location = new System.Drawing.Point(577, 493);
-            this.btnReLoad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReLoad.Margin = new System.Windows.Forms.Padding(2);
             this.btnReLoad.Name = "btnReLoad";
             this.btnReLoad.Size = new System.Drawing.Size(84, 35);
             this.btnReLoad.TabIndex = 77;
             this.btnReLoad.Text = "ReLoad";
             this.btnReLoad.UseVisualStyleBackColor = false;
+            this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click);
             // 
             // btnTroVe
             // 
@@ -94,12 +95,13 @@
             this.btnTroVe.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTroVe.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTroVe.Location = new System.Drawing.Point(692, 493);
-            this.btnTroVe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTroVe.Margin = new System.Windows.Forms.Padding(2);
             this.btnTroVe.Name = "btnTroVe";
             this.btnTroVe.Size = new System.Drawing.Size(84, 35);
             this.btnTroVe.TabIndex = 76;
             this.btnTroVe.Text = "Trở về";
             this.btnTroVe.UseVisualStyleBackColor = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
             // groupBox1
             // 
@@ -108,9 +110,9 @@
             this.groupBox1.Controls.Add(this.dgvDanhSachHoaDonBan);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(30, 284);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(746, 193);
             this.groupBox1.TabIndex = 74;
             this.groupBox1.TabStop = false;
@@ -134,12 +136,13 @@
             this.dgvDanhSachHoaDonBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachHoaDonBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachHoaDonBan.Location = new System.Drawing.Point(12, 29);
-            this.dgvDanhSachHoaDonBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDanhSachHoaDonBan.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDanhSachHoaDonBan.Name = "dgvDanhSachHoaDonBan";
             this.dgvDanhSachHoaDonBan.RowHeadersWidth = 51;
             this.dgvDanhSachHoaDonBan.RowTemplate.Height = 24;
             this.dgvDanhSachHoaDonBan.Size = new System.Drawing.Size(722, 152);
             this.dgvDanhSachHoaDonBan.TabIndex = 0;
+            this.dgvDanhSachHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDonBan_CellClick);
             // 
             // btnLuu
             // 
@@ -147,12 +150,13 @@
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLuu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLuu.Location = new System.Drawing.Point(692, 232);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(84, 35);
             this.btnLuu.TabIndex = 73;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuyBo
             // 
@@ -160,12 +164,13 @@
             this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHuyBo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHuyBo.Location = new System.Drawing.Point(521, 232);
-            this.btnHuyBo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnHuyBo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuyBo.Name = "btnHuyBo";
             this.btnHuyBo.Size = new System.Drawing.Size(84, 35);
             this.btnHuyBo.TabIndex = 72;
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = false;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // btnCapNhat
             // 
@@ -173,12 +178,13 @@
             this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCapNhat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCapNhat.Location = new System.Drawing.Point(360, 231);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.Size = new System.Drawing.Size(84, 35);
             this.btnCapNhat.TabIndex = 71;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -186,12 +192,13 @@
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnXoa.Location = new System.Drawing.Point(204, 231);
-            this.btnXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(84, 35);
             this.btnXoa.TabIndex = 70;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -199,12 +206,13 @@
             this.btnThem.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThem.Location = new System.Drawing.Point(30, 231);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(84, 35);
             this.btnThem.TabIndex = 69;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel
             // 
@@ -219,7 +227,7 @@
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel.Location = new System.Drawing.Point(0, 81);
-            this.panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel.Margin = new System.Windows.Forms.Padding(2);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(811, 116);
             this.panel.TabIndex = 68;
@@ -227,7 +235,7 @@
             // txtMaNhanVien
             // 
             this.txtMaNhanVien.Location = new System.Drawing.Point(139, 76);
-            this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaNhanVien.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaNhanVien.Name = "txtMaNhanVien";
             this.txtMaNhanVien.Size = new System.Drawing.Size(612, 23);
             this.txtMaNhanVien.TabIndex = 5;
@@ -246,7 +254,7 @@
             // txtNgayBan
             // 
             this.txtNgayBan.Location = new System.Drawing.Point(139, 48);
-            this.txtNgayBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgayBan.Margin = new System.Windows.Forms.Padding(2);
             this.txtNgayBan.Name = "txtNgayBan";
             this.txtNgayBan.Size = new System.Drawing.Size(612, 23);
             this.txtNgayBan.TabIndex = 3;
@@ -254,7 +262,7 @@
             // txtMaHoaDonBan
             // 
             this.txtMaHoaDonBan.Location = new System.Drawing.Point(139, 18);
-            this.txtMaHoaDonBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaHoaDonBan.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaHoaDonBan.Name = "txtMaHoaDonBan";
             this.txtMaHoaDonBan.Size = new System.Drawing.Size(612, 23);
             this.txtMaHoaDonBan.TabIndex = 2;
@@ -287,7 +295,7 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(811, 81);
             this.panel2.TabIndex = 67;
@@ -312,9 +320,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 537);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHoaDonBan";
             this.Text = "FrmHoaDonBan";
+            this.Load += new System.EventHandler(this.frmHoaDonBan_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -8,6 +8,9 @@ namespace DoAnCuaHangDoChoi
 {
     internal static class Program
     {
+        public static string role="";
+        public static DateTime date;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -16,7 +19,7 @@ namespace DoAnCuaHangDoChoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLich());
+            Application.Run(new frmNhaSanXuat());
         }
     }
 }
