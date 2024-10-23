@@ -119,6 +119,11 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã xóa thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show(err);
+                    }    
+                    
                 }
                 else
                 {

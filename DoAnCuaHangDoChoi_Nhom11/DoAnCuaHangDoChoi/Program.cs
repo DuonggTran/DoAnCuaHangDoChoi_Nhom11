@@ -16,7 +16,7 @@ namespace DoAnCuaHangDoChoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmTaiKhoan());
+            Application.Run(new frmNhaSanXuat());
         }
     }
 }

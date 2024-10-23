@@ -33,12 +33,9 @@ namespace BusinessLogicLayer
         // Xoá danh mục đồ chơi
         public bool XoaDanhMucDoChoi(ref string err, string MaLoaiDoChoi)
         {
-            if(db.MyExecuteNonQuery("USP_XoaDanhMucDoChoi", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@maloai", MaLoaiDoChoi)))
-            {
-                return true;
-            }
-            return false;
+            return db.MyExecuteNonQuery("USP_XoaDanhMucDoChoi", CommandType.StoredProcedure, ref err,
+                new SqlParameter("@maloai", MaLoaiDoChoi));
+            
         }
         // Cập nhật danh mục đồ chơi
         public bool CapNhatDanhMucDoChoi(ref string err, string MaLoaiDoChoi, string TenLoaiDoChoi)

@@ -131,7 +131,7 @@ namespace DoAnCuaHangDoChoi
                         MessageBox.Show("Đã xóa thành công!");
                     }
                     else
-                        MessageBox.Show("Không xóa được loại đồ chơi này.");
+                        MessageBox.Show(err);
                 }
                 else
                 {
