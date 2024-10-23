@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DBCaLamViec.cs" />
     <Compile Include="DBNhanVien.cs" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
@@ -51,6 +52,7 @@
     <Compile Include="DBDanhMucDoChoi.cs" />
     <Compile Include="DBNganKe.cs" />
     <Compile Include="DBNhaSanXuat.cs" />
+    <Compile Include="DBPhanCa.cs" />
     <Compile Include="DBTaiKhoan.cs" />
   </ItemGroup>
   <ItemGroup>

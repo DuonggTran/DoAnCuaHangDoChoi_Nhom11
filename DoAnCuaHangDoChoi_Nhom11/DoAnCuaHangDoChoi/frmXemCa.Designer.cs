@@ -28,96 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dgvDanhSachXemCa = new System.Windows.Forms.DataGridView();
+            this.btnReLoad = new System.Windows.Forms.Button();
+            this.btnLoc = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachXemCa)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvDanhSachXemCa
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 55);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(669, 207);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvDanhSachXemCa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhSachXemCa.Location = new System.Drawing.Point(16, 68);
+            this.dgvDanhSachXemCa.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDanhSachXemCa.Name = "dgvDanhSachXemCa";
+            this.dgvDanhSachXemCa.RowHeadersWidth = 51;
+            this.dgvDanhSachXemCa.Size = new System.Drawing.Size(892, 255);
+            this.dgvDanhSachXemCa.TabIndex = 0;
+            this.dgvDanhSachXemCa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachXemCa_CellClick);
             // 
-            // button1
+            // btnReLoad
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(295, 282);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 35);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Cập nhật";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnReLoad.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnReLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReLoad.Location = new System.Drawing.Point(393, 347);
+            this.btnReLoad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnReLoad.Name = "btnReLoad";
+            this.btnReLoad.Size = new System.Drawing.Size(112, 43);
+            this.btnReLoad.TabIndex = 19;
+            this.btnReLoad.Text = "ReLoad";
+            this.btnReLoad.UseVisualStyleBackColor = false;
+            this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click);
             // 
-            // btnThem
+            // btnLoc
             // 
-            this.btnThem.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(86, 282);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(72, 35);
-            this.btnThem.TabIndex = 18;
-            this.btnThem.Text = "Lọc";
-            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnLoc.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.Location = new System.Drawing.Point(115, 347);
+            this.btnLoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLoc.Name = "btnLoc";
+            this.btnLoc.Size = new System.Drawing.Size(96, 43);
+            this.btnLoc.TabIndex = 18;
+            this.btnLoc.Text = "Lọc";
+            this.btnLoc.UseVisualStyleBackColor = false;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
-            // button2
+            // btnThoat
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(518, 282);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(74, 35);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "Thoát";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnThoat.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThoat.Location = new System.Drawing.Point(691, 347);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(99, 43);
+            this.btnThoat.TabIndex = 20;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.DarkSalmon;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(0, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(0, -2);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(691, 39);
+            this.label10.Size = new System.Drawing.Size(921, 48);
             this.label10.TabIndex = 36;
             this.label10.Text = "Lịch làm việc";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmXemCa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 324);
+            this.ClientSize = new System.Drawing.Size(924, 399);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.btnLoc);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnReLoad);
+            this.Controls.Add(this.dgvDanhSachXemCa);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmXemCa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmXemCa";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.frmXemCa_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachXemCa)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridView dgvDanhSachXemCa;
+        private System.Windows.Forms.Button btnReLoad;
+        private System.Windows.Forms.Button btnLoc;
+        private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label10;
     }
 }
