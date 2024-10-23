@@ -27,12 +27,22 @@ namespace DoAnCuaHangDoChoi
         {
             if (checkBox1.Checked == false)
             {
+                int day_tmp = int.Parse(lblDay.Text);              
+                int month_tmp = DateTime.Now.Month;
+                int year_tmp = DateTime.Now.Year;               
+                DateTime selectedDate = new DateTime(year_tmp, month_tmp, day_tmp);
                 checkBox1.Checked = true;
                 this.BackColor = Color.FromArgb(255, 150, 79);
-                frmXemCa xemCa = new frmXemCa();
-                xemCa.Show();
-                frmChiaCa chiaCa = new frmChiaCa();
-                chiaCa.Show();
+                if(Program.role == "admin")
+                {
+                    frmChiaCa chiaCa = new frmChiaCa();
+                    chiaCa.Show();
+                } 
+                else
+                {
+                    frmXemCa xemCa = new frmXemCa();
+                    xemCa.Show();
+                }
             }
             else
             {

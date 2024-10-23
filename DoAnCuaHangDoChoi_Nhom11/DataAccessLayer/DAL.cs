@@ -13,9 +13,13 @@ namespace DataAccessLayer
         SqlConnection cnn = null;
         SqlCommand cmd = null;
         SqlDataAdapter adp = null;
+<<<<<<< HEAD
 
         string strConnect = "Data Source=LAPTOP-TJRJSVAO;Initial Catalog=CuaHangDoChoi_Nhom11;Integrated Security=True";
 
+=======
+        string strConnect = "Data Source=DUONGTRAN;Initial Catalog=CuaHangDoChoi_Nhom11;Integrated Security=True";
+>>>>>>> Master
         public DAL()
         {
             cnn = new SqlConnection(strConnect);
