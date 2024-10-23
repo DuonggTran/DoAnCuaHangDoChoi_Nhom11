@@ -186,7 +186,7 @@ namespace DoAnCuaHangDoChoi
                 try
                 {
                     kq = calam.ThemCaLam(ref err, maCa, txtMaNhanVien.Text, cboCaLam.Text, DateTime.Parse(dtpNgay.Text), thoiGianBD, thoiGianKT);
-                    bool kq1 = calam1.ThemCaLam(ref err, maCa, txtMaNhanVien.Text)
+                    bool kq1 = calam1.ThemCaLam(ref err, maCa, txtMaNhanVien.Text);
                     if (kq)
                     {
                         // Load lại dữ liệu trên DataGridView 

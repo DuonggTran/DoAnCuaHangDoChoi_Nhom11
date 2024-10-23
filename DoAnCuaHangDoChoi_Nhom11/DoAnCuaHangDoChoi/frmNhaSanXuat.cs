@@ -55,9 +55,10 @@ namespace DoAnCuaHangDoChoi
                 // Sự kiện click chuột
                 dgvDanhSachNhaSanXuat_CellClick(null, null);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
                 MessageBox.Show("Không lấy được nhà sản xuất. Đã xảy ra lỗi!");
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -66,7 +67,7 @@ namespace DoAnCuaHangDoChoi
         {
             // Kich hoạt biến Them 
             Them = true;
-
+            this.txtMaNhaSanXuat.Enabled = true;
             // Xóa trống các đối tượng trong Panel 
             this.panel.ResetText();
             this.panel.Enabled = true;
@@ -118,6 +119,11 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã xóa thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show(err);
+                    }    
+                    
                 }
                 else
                 {

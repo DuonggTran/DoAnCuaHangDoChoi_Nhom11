@@ -35,6 +35,7 @@ namespace BusinessLogicLayer
         {
             return db.MyExecuteNonQuery("USP_XoaDanhMucDoChoi", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maloai", MaLoaiDoChoi));
+            
         }
         // Cập nhật danh mục đồ chơi
         public bool CapNhatDanhMucDoChoi(ref string err, string MaLoaiDoChoi, string TenLoaiDoChoi)

@@ -19,6 +19,7 @@ namespace DoAnCuaHangDoChoi
         DBChiTietHoaDonBan cthdbbusiness = new DBChiTietHoaDonBan();
         public frmChiTietHoaDonBan()
         {
+        //update
             InitializeComponent();
         }
 

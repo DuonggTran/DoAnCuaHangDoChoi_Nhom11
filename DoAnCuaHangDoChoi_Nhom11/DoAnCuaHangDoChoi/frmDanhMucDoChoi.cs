@@ -77,7 +77,7 @@ namespace DoAnCuaHangDoChoi
         {
             // Kich hoạt biến Them 
             Them = true;
-
+            this.txtMaLoaiDoChoi.Enabled = true;
             // Xóa trống các đối tượng trong Panel 
             this.panel.ResetText();
             this.panel.Enabled = true;
@@ -110,7 +110,7 @@ namespace DoAnCuaHangDoChoi
                 int r = dgvDanhMucDoChoi.CurrentCell.RowIndex;
                 // Lấy MaLoaiDoChoi của record hiện hành 
                 string strMaLoaiDoChoi =
-                dgvDanhMucDoChoi.Rows[r].Cells[0].Value.ToString();
+                dgvDanhMucDoChoi.Rows[r].Cells[0].Value.ToString().Trim();
                 // Hiện thông báo xác nhận việc xóa mẫu tin 
                 // Khai báo biến traloi 
                 DialogResult traloi;
@@ -122,6 +122,7 @@ namespace DoAnCuaHangDoChoi
                 {
                     // Thực hiện câu lệnh SQL 
                     kq = dmdcbusiness.XoaDanhMucDoChoi(ref err, strMaLoaiDoChoi);
+                    MessageBox.Show(kq.ToString());
                     if (kq)
                     {
                         // Cập nhật lại DataGridView 
@@ -130,7 +131,7 @@ namespace DoAnCuaHangDoChoi
                         MessageBox.Show("Đã xóa thành công!");
                     }
                     else
-                        MessageBox.Show(txtMaLoaiDoChoi.Text);
+                        MessageBox.Show(err);
                 }
                 else
                 {
