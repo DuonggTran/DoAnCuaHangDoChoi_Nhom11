@@ -75,7 +75,6 @@
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
       <Private>True</Private>
-      <Private>True</Private>
     </Reference>
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
@@ -130,6 +129,12 @@
     <Compile Include="frmAdminHome.Designer.cs">
       <DependentUpon>frmAdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBan.Designer.cs">
+      <DependentUpon>frmBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiaCa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,6 +146,12 @@
     </Compile>
     <Compile Include="frmChiTietHoaDonBan.Designer.cs">
       <DependentUpon>frmChiTietHoaDonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLich.cs">
       <SubType>Form</SubType>
@@ -183,6 +194,12 @@
     </Compile>
     <Compile Include="frmNganKe.Designer.cs">
       <DependentUpon>frmNganKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhap.Designer.cs">
+      <DependentUpon>frmNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNhaSanXuat.cs">
       <SubType>Form</SubType>
@@ -231,14 +248,23 @@
     <EmbeddedResource Include="frmAdminHome.resx">
       <DependentUpon>frmAdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBan.resx">
+      <DependentUpon>frmBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChiaCa.resx">
       <DependentUpon>frmChiaCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLich.resx">
       <DependentUpon>frmLich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhap.resx">
+      <DependentUpon>frmNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemCa.resx">
       <DependentUpon>frmXemCa.cs</DependentUpon>

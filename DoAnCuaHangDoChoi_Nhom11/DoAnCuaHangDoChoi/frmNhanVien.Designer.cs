@@ -76,6 +76,7 @@
             this.btnTroVe.TabIndex = 20;
             this.btnTroVe.Text = "Trở về";
             this.btnTroVe.UseVisualStyleBackColor = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
             // btnCapNhat
             // 
@@ -88,6 +89,7 @@
             this.btnCapNhat.TabIndex = 19;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnThem
             // 
@@ -100,6 +102,7 @@
             this.btnThem.TabIndex = 17;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // rdNu
             // 
@@ -170,6 +173,7 @@
             this.btnReLoad.TabIndex = 21;
             this.btnReLoad.Text = "ReLoad";
             this.btnReLoad.UseVisualStyleBackColor = false;
+            this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click);
             // 
             // label8
             // 
@@ -224,6 +228,7 @@
             this.btnLuu.TabIndex = 23;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuyBo
             // 
@@ -236,6 +241,7 @@
             this.btnHuyBo.TabIndex = 22;
             this.btnHuyBo.Text = "Hủy Bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = false;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // btnXoa
             // 
@@ -248,6 +254,7 @@
             this.btnXoa.TabIndex = 18;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // label7
             // 
@@ -269,6 +276,7 @@
             this.btnLoc.TabIndex = 25;
             this.btnLoc.Text = "Lọc";
             this.btnLoc.UseVisualStyleBackColor = false;
+            this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // label5
             // 
@@ -324,7 +332,7 @@
             // 
             // label10
             // 
-            this.label10.BackColor = System.Drawing.Color.DarkSalmon;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label10.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -425,6 +433,7 @@
             this.Name = "frmNhanVien";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmNhanVien";
+            this.Load += new System.EventHandler(this.frmNhanVien_Load);
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachNhanVien)).EndInit();

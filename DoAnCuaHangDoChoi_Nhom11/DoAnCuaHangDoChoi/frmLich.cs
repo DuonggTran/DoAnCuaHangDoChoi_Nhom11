@@ -43,6 +43,12 @@ namespace DoAnCuaHangDoChoi
             }
             showDays(_month, _year);
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void showDays(int month, int year)
         {
             flowLayoutPanel1.Controls.Clear();
