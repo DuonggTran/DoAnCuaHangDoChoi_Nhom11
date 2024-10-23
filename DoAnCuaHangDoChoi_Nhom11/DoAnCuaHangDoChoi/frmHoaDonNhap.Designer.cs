@@ -40,8 +40,8 @@
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNgayBan = new System.Windows.Forms.TextBox();
-            this.txtMaHoaDonBan = new System.Windows.Forms.TextBox();
+            this.txtNgayNhap = new System.Windows.Forms.TextBox();
+            this.txtMaHoaDonNhap = new System.Windows.Forms.TextBox();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.panel = new System.Windows.Forms.Panel();
@@ -62,7 +62,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(254, 7);
+            this.label1.Location = new System.Drawing.Point(209, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(421, 47);
@@ -81,6 +81,7 @@
             this.btnReLoad.TabIndex = 77;
             this.btnReLoad.Text = "ReLoad";
             this.btnReLoad.UseVisualStyleBackColor = false;
+            this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click);
             // 
             // btnTroVe
             // 
@@ -94,6 +95,7 @@
             this.btnTroVe.TabIndex = 76;
             this.btnTroVe.Text = "Trở về";
             this.btnTroVe.UseVisualStyleBackColor = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
             // groupBox1
             // 
@@ -134,6 +136,7 @@
             this.dgvDanhSachHoaDonNhap.RowTemplate.Height = 24;
             this.dgvDanhSachHoaDonNhap.Size = new System.Drawing.Size(722, 152);
             this.dgvDanhSachHoaDonNhap.TabIndex = 0;
+            this.dgvDanhSachHoaDonNhap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDonNhap_CellClick);
             // 
             // label2
             // 
@@ -169,6 +172,7 @@
             this.btnLuu.TabIndex = 73;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnHuyBo
             // 
@@ -182,6 +186,7 @@
             this.btnHuyBo.TabIndex = 72;
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = false;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click);
             // 
             // btnCapNhat
             // 
@@ -195,6 +200,7 @@
             this.btnCapNhat.TabIndex = 71;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // label3
             // 
@@ -207,21 +213,21 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Mã nhân viên";
             // 
-            // txtNgayBan
+            // txtNgayNhap
             // 
-            this.txtNgayBan.Location = new System.Drawing.Point(148, 48);
-            this.txtNgayBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtNgayBan.Name = "txtNgayBan";
-            this.txtNgayBan.Size = new System.Drawing.Size(612, 23);
-            this.txtNgayBan.TabIndex = 3;
+            this.txtNgayNhap.Location = new System.Drawing.Point(148, 48);
+            this.txtNgayNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNgayNhap.Name = "txtNgayNhap";
+            this.txtNgayNhap.Size = new System.Drawing.Size(612, 23);
+            this.txtNgayNhap.TabIndex = 3;
             // 
-            // txtMaHoaDonBan
+            // txtMaHoaDonNhap
             // 
-            this.txtMaHoaDonBan.Location = new System.Drawing.Point(148, 18);
-            this.txtMaHoaDonBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtMaHoaDonBan.Name = "txtMaHoaDonBan";
-            this.txtMaHoaDonBan.Size = new System.Drawing.Size(612, 23);
-            this.txtMaHoaDonBan.TabIndex = 2;
+            this.txtMaHoaDonNhap.Location = new System.Drawing.Point(148, 18);
+            this.txtMaHoaDonNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMaHoaDonNhap.Name = "txtMaHoaDonNhap";
+            this.txtMaHoaDonNhap.Size = new System.Drawing.Size(612, 23);
+            this.txtMaHoaDonNhap.TabIndex = 2;
             // 
             // btnXoa
             // 
@@ -235,6 +241,7 @@
             this.btnXoa.TabIndex = 70;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -248,6 +255,7 @@
             this.btnThem.TabIndex = 69;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // panel
             // 
@@ -255,8 +263,8 @@
             this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel.Controls.Add(this.txtMaNhanVien);
             this.panel.Controls.Add(this.label3);
-            this.panel.Controls.Add(this.txtNgayBan);
-            this.panel.Controls.Add(this.txtMaHoaDonBan);
+            this.panel.Controls.Add(this.txtNgayNhap);
+            this.panel.Controls.Add(this.txtMaHoaDonNhap);
             this.panel.Controls.Add(this.label2);
             this.panel.Controls.Add(this.label4);
             this.panel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -315,6 +323,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmHoaDonNhap";
             this.Text = "FrmHoaDonNhap";
+            this.Load += new System.EventHandler(this.frmHoaDonNhap_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachHoaDonNhap)).EndInit();
@@ -341,8 +350,8 @@
         private System.Windows.Forms.Button btnHuyBo;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtNgayBan;
-        private System.Windows.Forms.TextBox txtMaHoaDonBan;
+        private System.Windows.Forms.TextBox txtNgayNhap;
+        private System.Windows.Forms.TextBox txtMaHoaDonNhap;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Panel panel;

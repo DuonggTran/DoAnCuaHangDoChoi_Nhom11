@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLogicLayer
 {
-    internal class DBHoaDonNhap
+    public class DBHoaDonNhap
     {
         DAL db = null;
         public DBHoaDonNhap()
@@ -49,5 +49,6 @@ namespace BusinessLogicLayer
         {
             return db.ExecuteQueryDataSet("SELECT * FROM UDF_TimHoaDonNhap(@mahoadonnhap)", CommandType.Text);
         }
+
     }
 }

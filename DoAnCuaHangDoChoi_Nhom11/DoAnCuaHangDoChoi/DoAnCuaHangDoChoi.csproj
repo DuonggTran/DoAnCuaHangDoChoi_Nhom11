@@ -136,11 +136,23 @@
     <Compile Include="frmAdminHome.Designer.cs">
       <DependentUpon>frmAdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBan.Designer.cs">
+      <DependentUpon>frmBan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiaCa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmChiaCa.Designer.cs">
       <DependentUpon>frmChiaCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietHoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietHoaDonBan.Designer.cs">
+      <DependentUpon>frmChiTietHoaDonBan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLich.cs">
       <SubType>Form</SubType>
@@ -153,12 +165,6 @@
     </Compile>
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmChiTietHoaDonBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmChiTietHoaDonBan.Designer.cs">
-      <DependentUpon>frmChiTietHoaDonBan.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChiTietHoaDonNhap.cs">
       <SubType>Form</SubType>
@@ -189,6 +195,12 @@
     </Compile>
     <Compile Include="frmNganKe.Designer.cs">
       <DependentUpon>frmNganKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhap.Designer.cs">
+      <DependentUpon>frmNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNhaSanXuat.cs">
       <SubType>Form</SubType>
@@ -237,6 +249,9 @@
     <EmbeddedResource Include="frmAdminHome.resx">
       <DependentUpon>frmAdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBan.resx">
+      <DependentUpon>frmBan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChiaCa.resx">
       <DependentUpon>frmChiaCa.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,6 +260,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNhap.resx">
+      <DependentUpon>frmNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemCa.resx">
       <DependentUpon>frmXemCa.cs</DependentUpon>
@@ -281,9 +299,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmUserHome.resx">
       <DependentUpon>frmUserHome.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmChiTietHoaDonBan.resx">
-      <DependentUpon>FrmChiTietHoaDonBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
