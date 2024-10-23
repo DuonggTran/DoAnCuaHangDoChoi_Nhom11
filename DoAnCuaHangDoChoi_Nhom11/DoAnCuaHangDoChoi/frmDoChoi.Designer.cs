@@ -47,8 +47,6 @@
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvDoChoi = new System.Windows.Forms.DataGridView();
-            this.btnTimMa = new System.Windows.Forms.Button();
-            this.btnTimTen = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.txtNhaSanXuat = new System.Windows.Forms.TextBox();
@@ -70,6 +68,8 @@
             this.btnDaBan = new System.Windows.Forms.Button();
             this.btnReLoad = new System.Windows.Forms.Button();
             this.btnTroVe = new System.Windows.Forms.Button();
+            this.btnTimMa = new System.Windows.Forms.Button();
+            this.btnTimTen = new System.Windows.Forms.Button();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNganKe)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -101,7 +101,7 @@
             this.groupBox5.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.groupBox5.Controls.Add(this.dgvNganKe);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(800, 682);
+            this.groupBox5.Location = new System.Drawing.Point(800, 663);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(524, 285);
             this.groupBox5.TabIndex = 20;
@@ -118,6 +118,7 @@
             this.dgvNganKe.RowTemplate.Height = 24;
             this.dgvNganKe.Size = new System.Drawing.Size(489, 232);
             this.dgvNganKe.TabIndex = 0;
+            this.dgvNganKe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNganKe_CellClick);
             // 
             // groupBox4
             // 
@@ -141,6 +142,7 @@
             this.dgvNhaSanXuat.RowTemplate.Height = 24;
             this.dgvNhaSanXuat.Size = new System.Drawing.Size(489, 200);
             this.dgvNhaSanXuat.TabIndex = 0;
+            this.dgvNhaSanXuat.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaSanXuat_CellClick);
             // 
             // groupBox3
             // 
@@ -199,6 +201,7 @@
             this.dgvLoaiDoChoi.RowTemplate.Height = 24;
             this.dgvLoaiDoChoi.Size = new System.Drawing.Size(489, 231);
             this.dgvLoaiDoChoi.TabIndex = 0;
+            this.dgvLoaiDoChoi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLoaiDoChoi_CellClick);
             // 
             // label7
             // 
@@ -223,6 +226,7 @@
             this.btnLuu.TabIndex = 24;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click_1);
             // 
             // btnHuyBo
             // 
@@ -234,6 +238,7 @@
             this.btnHuyBo.TabIndex = 23;
             this.btnHuyBo.Text = "Hủy bỏ";
             this.btnHuyBo.UseVisualStyleBackColor = false;
+            this.btnHuyBo.Click += new System.EventHandler(this.btnHuyBo_Click_1);
             // 
             // btnCapNhat
             // 
@@ -245,6 +250,7 @@
             this.btnCapNhat.TabIndex = 22;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click_1);
             // 
             // btnXoa
             // 
@@ -256,6 +262,7 @@
             this.btnXoa.TabIndex = 21;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click_1);
             // 
             // btnThem
             // 
@@ -267,6 +274,7 @@
             this.btnThem.TabIndex = 19;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click_1);
             // 
             // groupBox1
             // 
@@ -291,40 +299,8 @@
             this.dgvDoChoi.RowTemplate.Height = 24;
             this.dgvDoChoi.Size = new System.Drawing.Size(724, 234);
             this.dgvDoChoi.TabIndex = 0;
-            // 
-            // btnTimMa
-            // 
-            this.btnTimMa.BackColor = System.Drawing.Color.White;
-            this.btnTimMa.FlatAppearance.BorderSize = 0;
-            this.btnTimMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimMa.Image = ((System.Drawing.Image)(resources.GetObject("btnTimMa.Image")));
-            this.btnTimMa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimMa.Location = new System.Drawing.Point(561, 206);
-            this.btnTimMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTimMa.Name = "btnTimMa";
-            this.btnTimMa.Size = new System.Drawing.Size(178, 43);
-            this.btnTimMa.TabIndex = 17;
-            this.btnTimMa.Text = "Mã";
-            this.btnTimMa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimMa.UseVisualStyleBackColor = false;
-            // 
-            // btnTimTen
-            // 
-            this.btnTimTen.BackColor = System.Drawing.Color.White;
-            this.btnTimTen.FlatAppearance.BorderSize = 0;
-            this.btnTimTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimTen.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTen.Image")));
-            this.btnTimTen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimTen.Location = new System.Drawing.Point(304, 206);
-            this.btnTimTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnTimTen.Name = "btnTimTen";
-            this.btnTimTen.Size = new System.Drawing.Size(178, 43);
-            this.btnTimTen.TabIndex = 16;
-            this.btnTimTen.Text = "Tên";
-            this.btnTimTen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimTen.UseVisualStyleBackColor = false;
+            this.dgvDoChoi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoChoi_CellClick);
+            this.dgvDoChoi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDoChoi_CellContentClick);
             // 
             // label1
             // 
@@ -492,51 +468,91 @@
             // 
             this.btnChuaBan.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnChuaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChuaBan.Location = new System.Drawing.Point(929, 984);
+            this.btnChuaBan.Location = new System.Drawing.Point(923, 954);
             this.btnChuaBan.Name = "btnChuaBan";
             this.btnChuaBan.Size = new System.Drawing.Size(117, 54);
             this.btnChuaBan.TabIndex = 33;
             this.btnChuaBan.Text = "Chưa bán";
             this.btnChuaBan.UseVisualStyleBackColor = false;
+            this.btnChuaBan.Click += new System.EventHandler(this.btnChuaBan_Click_1);
             // 
             // btnDaBan
             // 
             this.btnDaBan.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnDaBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDaBan.Location = new System.Drawing.Point(795, 984);
+            this.btnDaBan.Location = new System.Drawing.Point(800, 954);
             this.btnDaBan.Name = "btnDaBan";
             this.btnDaBan.Size = new System.Drawing.Size(99, 54);
             this.btnDaBan.TabIndex = 32;
             this.btnDaBan.Text = "Đã bán";
             this.btnDaBan.UseVisualStyleBackColor = false;
+            this.btnDaBan.Click += new System.EventHandler(this.btnDaBan_Click_1);
             // 
             // btnReLoad
             // 
             this.btnReLoad.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnReLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReLoad.Location = new System.Drawing.Point(1083, 984);
+            this.btnReLoad.Location = new System.Drawing.Point(1073, 954);
             this.btnReLoad.Name = "btnReLoad";
             this.btnReLoad.Size = new System.Drawing.Size(102, 54);
             this.btnReLoad.TabIndex = 31;
             this.btnReLoad.Text = "ReLoad";
             this.btnReLoad.UseVisualStyleBackColor = false;
+            this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click_1);
             // 
             // btnTroVe
             // 
             this.btnTroVe.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.btnTroVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTroVe.Location = new System.Drawing.Point(1216, 984);
+            this.btnTroVe.Location = new System.Drawing.Point(1205, 954);
             this.btnTroVe.Name = "btnTroVe";
             this.btnTroVe.Size = new System.Drawing.Size(104, 54);
             this.btnTroVe.TabIndex = 30;
             this.btnTroVe.Text = "Trở về";
             this.btnTroVe.UseVisualStyleBackColor = false;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click_1);
+            // 
+            // btnTimMa
+            // 
+            this.btnTimMa.BackColor = System.Drawing.Color.White;
+            this.btnTimMa.FlatAppearance.BorderSize = 0;
+            this.btnTimMa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimMa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimMa.Image = ((System.Drawing.Image)(resources.GetObject("btnTimMa.Image")));
+            this.btnTimMa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimMa.Location = new System.Drawing.Point(561, 206);
+            this.btnTimMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTimMa.Name = "btnTimMa";
+            this.btnTimMa.Size = new System.Drawing.Size(178, 43);
+            this.btnTimMa.TabIndex = 17;
+            this.btnTimMa.Text = "Mã";
+            this.btnTimMa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimMa.UseVisualStyleBackColor = false;
+            this.btnTimMa.Click += new System.EventHandler(this.btnTimMa_Click_1);
+            // 
+            // btnTimTen
+            // 
+            this.btnTimTen.BackColor = System.Drawing.Color.White;
+            this.btnTimTen.FlatAppearance.BorderSize = 0;
+            this.btnTimTen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimTen.Image = ((System.Drawing.Image)(resources.GetObject("btnTimTen.Image")));
+            this.btnTimTen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimTen.Location = new System.Drawing.Point(304, 206);
+            this.btnTimTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnTimTen.Name = "btnTimTen";
+            this.btnTimTen.Size = new System.Drawing.Size(178, 43);
+            this.btnTimTen.TabIndex = 16;
+            this.btnTimTen.Text = "Tên";
+            this.btnTimTen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimTen.UseVisualStyleBackColor = false;
+            this.btnTimTen.Click += new System.EventHandler(this.btnTimTen_Click_1);
             // 
             // frmDoChoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1341, 1050);
+            this.ClientSize = new System.Drawing.Size(1352, 1050);
             this.Controls.Add(this.btnChuaBan);
             this.Controls.Add(this.btnDaBan);
             this.Controls.Add(this.btnReLoad);

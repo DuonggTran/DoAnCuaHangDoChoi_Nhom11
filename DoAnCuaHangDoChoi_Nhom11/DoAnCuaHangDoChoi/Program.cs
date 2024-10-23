@@ -19,7 +19,7 @@ namespace DoAnCuaHangDoChoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNhaSanXuat());
+            Application.Run(new frmDangNhap());
         }
     }
 }

@@ -20,6 +20,11 @@ namespace BusinessLogicLayer
         {
             return db.ExecuteQueryDataSet("USP_LayDoChoi", CommandType.StoredProcedure);
         }
+        public DataSet LayDoChoiVaDanhMuc()
+        {
+            return db.ExecuteQueryDataSet("USP_LayDoChoiVaDanhMuc", CommandType.StoredProcedure);
+
+        }
 
         public DataSet DoChoiDaBan()
         {
