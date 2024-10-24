@@ -88,10 +88,8 @@ namespace DoAnCuaHangDoChoi
             {
                 // Đưa dữ liệu lên DataGridView  
                 this.dgvLoaiDoChoi.DataSource = dmdcbusiness.LayDanhMucDoChoi().Tables[0];
-
                 // Thay đổi độ rộng cột 
                 this.dgvLoaiDoChoi.AutoResizeColumns();
-
                 // Đặt tên cột
                 dgvLoaiDoChoi.Columns[0].HeaderText = "Mã loại đồ chơi";
                 dgvLoaiDoChoi.Columns[1].HeaderText = "Tên loại đồ chơi";
