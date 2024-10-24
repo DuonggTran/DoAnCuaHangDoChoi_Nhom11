@@ -140,6 +140,7 @@ namespace DoAnCuaHangDoChoi
         {
             try
             {   //khi click record trong dgvDanhSachDoChoi thì thông tin sẽ đc đưa lên các textbox và combobox
+
                 int r = dgvDoChoi.CurrentCell.RowIndex;
                 //hiển thị 
                 this.txtMaDoChoi.Text = dgvDoChoi.Rows[r].Cells[0].Value.ToString();
@@ -153,8 +154,9 @@ namespace DoAnCuaHangDoChoi
 
 
             }
-            catch   //TH click row ko có data
+            catch (Exception ex) //TH click row ko có data
             {
+                MessageBox.Show(ex.Message);
                 this.txtMaDoChoi.ResetText();
                 this.txtTenDoChoi.ResetText();
                 this.txtGiaTien.ResetText();
@@ -401,6 +403,7 @@ namespace DoAnCuaHangDoChoi
 
         private void btnDaBan_Click_1(object sender, EventArgs e)
         {
+
             dgvDoChoi.DataSource = dcbusiness.DoChoiDaBan().Tables[0];
         }
 
@@ -450,6 +453,11 @@ namespace DoAnCuaHangDoChoi
         }
 
         private void dgvDoChoi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }

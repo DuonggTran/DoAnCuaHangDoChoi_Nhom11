@@ -88,7 +88,7 @@ namespace BusinessLogicLayer
                 CommandType.Text);
         }
 
-        // Tổng chi phí nhập theo từng loại đồ chơi: USP_TongDoanhThuLoaiDoChoi
+        // Tổng chi phí nhập theo từng loại đồ chơi:
         public DataSet TongChiPhiNhapLoaiDoChoi()
         {
             return db.ExecuteQueryDataSet("USP_TongChiPhiNhapLoaiDoChoi",

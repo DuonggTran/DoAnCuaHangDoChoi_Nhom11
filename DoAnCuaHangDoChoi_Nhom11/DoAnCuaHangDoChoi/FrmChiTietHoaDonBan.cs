@@ -303,7 +303,7 @@ namespace DoAnCuaHangDoChoi
                 else
                 {
                     MessageBox.Show("Không Thể Cập Nhập!");
-                }
+                } 
             }
             this.btnReLoad.Enabled = true;
             this.btnXoa.Enabled = true;

@@ -125,5 +125,10 @@ namespace DoAnCuaHangDoChoi
         {
 
         }
+
+        private void chrDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
