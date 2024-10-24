@@ -45,10 +45,10 @@ namespace BusinessLogicLayer
         }
 
         // Tìm kiếm hoá đơn nhập: UDF_TimHoaDonNhap
-        public DataSet TimHoaDonNhap(string mahoadonnhap)
-        {
-            return db.ExecuteQueryDataSet("SELECT * FROM UDF_TimHoaDonNhap(@mahoadonnhap)", CommandType.Text);
-        }
+        //public DataSet TimHoaDonNhap(string mahoadonnhap)
+        //{
+        //    return db.ExecuteQueryDataSet("SELECT * FROM UDF_TimHoaDonNhap(@mahoadonnhap)", CommandType.Text);
+        //}
 
     }
 }
