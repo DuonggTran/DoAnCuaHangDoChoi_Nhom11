@@ -105,49 +105,6 @@ namespace DoAnCuaHangDoChoi
             // Đưa con trỏ đến TextField txtMaNhanVien
             this.txtMaHoaDonNhap.Focus();
         }
-
-        //private void btnXoa_Click(object sender, EventArgs e)
-        //{
-        //    bool kq = false;
-        //    string err = "";
-        //    try
-        //    {
-        //        // Lấy thứ tự record hiện hành 
-        //        int r = dgvDanhSachHoaDonNhap.CurrentCell.RowIndex;
-        //        // Lấy MaLoaiDoChoi của record hiện hành 
-        //        string strMaHoaDonNhap =
-        //        dgvDanhSachHoaDonNhap.Rows[r].Cells[0].Value.ToString();
-        //        // Hiện thông báo xác nhận việc xóa mẫu tin 
-        //        // Khai báo biến traloi 
-        //        DialogResult traloi;
-        //        // Hiện hộp thoại hỏi đáp 
-        //        traloi = MessageBox.Show("Bạn có chắc muốn xoá loại hóa đơn nhập này không?", "Trả lời",
-        //        MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-        //        // Kiểm tra có nhắp chọn nút Ok không? 
-        //        if (traloi == DialogResult.Yes)
-        //        {
-        //            // Thực hiện câu lệnh SQL 
-        //            kq = hdnbusiness.XoaHoaDonNhap(ref err, txtMaHoaDonNhap.Text);
-        //            if (kq)
-        //            {
-        //                // Cập nhật lại DataGridView 
-        //                LoadHoaDonNhap();
-        //                // Thông báo 
-        //                MessageBox.Show("Đã xóa thành công!");
-        //            }
-        //        }
-        //        else
-        //        {
-
-        //            // Thông báo 
-        //            MessageBox.Show("Huỷ bỏ việc xoá hóa đơn nhập này!");
-        //        }
-        //    }
-        //    catch (SqlException)
-        //    {
-        //        MessageBox.Show("Không xóa được hóa đơn nhập này. Lỗi rồi!");
-        //    }
-        //}
         private void btnXoa_Click(object sender, EventArgs e)
         {
             bool kq = false;

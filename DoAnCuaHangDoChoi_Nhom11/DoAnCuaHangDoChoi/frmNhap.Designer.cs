@@ -39,7 +39,7 @@
             this.btnCTHDN.FlatAppearance.BorderSize = 0;
             this.btnCTHDN.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
             this.btnCTHDN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCTHDN.Font = new System.Drawing.Font("Segoe UI", 25.8F);
+            this.btnCTHDN.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCTHDN.ForeColor = System.Drawing.Color.White;
             this.btnCTHDN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCTHDN.Location = new System.Drawing.Point(0, 54);
@@ -58,7 +58,7 @@
             this.btnHoaDonNhap.FlatAppearance.BorderSize = 0;
             this.btnHoaDonNhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
             this.btnHoaDonNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 25.8F);
+            this.btnHoaDonNhap.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHoaDonNhap.ForeColor = System.Drawing.Color.White;
             this.btnHoaDonNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDonNhap.Location = new System.Drawing.Point(0, 0);
@@ -78,7 +78,7 @@
             this.ClientSize = new System.Drawing.Size(220, 113);
             this.Controls.Add(this.btnCTHDN);
             this.Controls.Add(this.btnHoaDonNhap);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmNhap";
             this.Text = "frmNhap";
             this.ResumeLayout(false);

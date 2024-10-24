@@ -54,6 +54,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnXoa);
             this.panel1.Controls.Add(this.btnLuu);
@@ -87,8 +88,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.SystemColors.Window;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnXoa.Location = new System.Drawing.Point(98, 169);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
@@ -100,8 +102,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.SystemColors.Window;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnLuu.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLuu.Location = new System.Drawing.Point(403, 169);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
@@ -113,8 +116,9 @@
             // 
             // btnHuyBo
             // 
-            this.btnHuyBo.BackColor = System.Drawing.SystemColors.Window;
-            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnHuyBo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnHuyBo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnHuyBo.Location = new System.Drawing.Point(301, 169);
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuyBo.Name = "btnHuyBo";
@@ -126,8 +130,9 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.BackColor = System.Drawing.SystemColors.Window;
-            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnCapNhat.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCapNhat.Location = new System.Drawing.Point(200, 169);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
@@ -139,8 +144,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.SystemColors.Window;
-            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnThem.Location = new System.Drawing.Point(2, 169);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
@@ -205,6 +211,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.btnReLoad);
             this.panel2.Controls.Add(this.btnTroVe);
             this.panel2.Controls.Add(this.groupBox1);
@@ -216,8 +223,9 @@
             // 
             // btnReLoad
             // 
-            this.btnReLoad.BackColor = System.Drawing.SystemColors.Window;
-            this.btnReLoad.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnReLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnReLoad.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnReLoad.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnReLoad.Location = new System.Drawing.Point(301, 276);
             this.btnReLoad.Margin = new System.Windows.Forms.Padding(2);
             this.btnReLoad.Name = "btnReLoad";
@@ -229,8 +237,9 @@
             // 
             // btnTroVe
             // 
-            this.btnTroVe.BackColor = System.Drawing.SystemColors.Window;
-            this.btnTroVe.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnTroVe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnTroVe.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.btnTroVe.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTroVe.Location = new System.Drawing.Point(404, 276);
             this.btnTroVe.Margin = new System.Windows.Forms.Padding(2);
             this.btnTroVe.Name = "btnTroVe";
@@ -242,9 +251,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Controls.Add(this.dgvDanhMucDoChoi);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(3, 6);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);

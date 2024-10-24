@@ -56,6 +56,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.btnLuu);
             this.panel1.Controls.Add(this.btnHuyBo);
@@ -74,7 +75,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.label4.Location = new System.Drawing.Point(2, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -86,8 +87,9 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.BackColor = System.Drawing.SystemColors.Window;
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLuu.Location = new System.Drawing.Point(431, 187);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(2);
             this.btnLuu.Name = "btnLuu";
@@ -99,8 +101,9 @@
             // 
             // btnHuyBo
             // 
-            this.btnHuyBo.BackColor = System.Drawing.SystemColors.Window;
+            this.btnHuyBo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnHuyBo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuyBo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnHuyBo.Location = new System.Drawing.Point(325, 187);
             this.btnHuyBo.Margin = new System.Windows.Forms.Padding(2);
             this.btnHuyBo.Name = "btnHuyBo";
@@ -112,8 +115,9 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.BackColor = System.Drawing.SystemColors.Window;
+            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnCapNhat.Location = new System.Drawing.Point(217, 187);
             this.btnCapNhat.Margin = new System.Windows.Forms.Padding(2);
             this.btnCapNhat.Name = "btnCapNhat";
@@ -125,8 +129,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.BackColor = System.Drawing.SystemColors.Window;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnXoa.Location = new System.Drawing.Point(109, 187);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
@@ -138,8 +143,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.SystemColors.Window;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnThem.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnThem.Location = new System.Drawing.Point(2, 187);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
@@ -170,7 +176,7 @@
             this.txtSucChua.Location = new System.Drawing.Point(129, 91);
             this.txtSucChua.Margin = new System.Windows.Forms.Padding(2);
             this.txtSucChua.Name = "txtSucChua";
-            this.txtSucChua.Size = new System.Drawing.Size(236, 23);
+            this.txtSucChua.Size = new System.Drawing.Size(356, 23);
             this.txtSucChua.TabIndex = 5;
             // 
             // label3
@@ -189,7 +195,7 @@
             this.txtViTri.Location = new System.Drawing.Point(129, 54);
             this.txtViTri.Margin = new System.Windows.Forms.Padding(2);
             this.txtViTri.Name = "txtViTri";
-            this.txtViTri.Size = new System.Drawing.Size(236, 23);
+            this.txtViTri.Size = new System.Drawing.Size(356, 23);
             this.txtViTri.TabIndex = 3;
             // 
             // txtMaNganKe
@@ -197,7 +203,7 @@
             this.txtMaNganKe.Location = new System.Drawing.Point(129, 13);
             this.txtMaNganKe.Margin = new System.Windows.Forms.Padding(2);
             this.txtMaNganKe.Name = "txtMaNganKe";
-            this.txtMaNganKe.Size = new System.Drawing.Size(236, 23);
+            this.txtMaNganKe.Size = new System.Drawing.Size(356, 23);
             this.txtMaNganKe.TabIndex = 2;
             // 
             // label2
@@ -224,6 +230,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel2.Controls.Add(this.btnReLoad);
             this.panel2.Controls.Add(this.btnTroVe);
             this.panel2.Controls.Add(this.groupBox1);
@@ -235,8 +242,9 @@
             // 
             // btnReLoad
             // 
-            this.btnReLoad.BackColor = System.Drawing.SystemColors.Window;
+            this.btnReLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnReLoad.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReLoad.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnReLoad.Location = new System.Drawing.Point(332, 223);
             this.btnReLoad.Margin = new System.Windows.Forms.Padding(2);
             this.btnReLoad.Name = "btnReLoad";
@@ -248,8 +256,9 @@
             // 
             // btnTroVe
             // 
-            this.btnTroVe.BackColor = System.Drawing.SystemColors.Window;
+            this.btnTroVe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.btnTroVe.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTroVe.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTroVe.Location = new System.Drawing.Point(434, 223);
             this.btnTroVe.Margin = new System.Windows.Forms.Padding(2);
             this.btnTroVe.Name = "btnTroVe";
@@ -261,9 +270,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Controls.Add(this.dgvDanhSachNganKe);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(3, 5);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);

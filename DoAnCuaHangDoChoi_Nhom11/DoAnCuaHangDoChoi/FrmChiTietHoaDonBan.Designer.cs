@@ -110,7 +110,7 @@
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.HighlightText;
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.dgvDanhSachChiTietHoaDonBan);
+            this.groupBox2.Controls.Add(this.dgvDanhSachHoaDonBan);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(321, 316);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
@@ -298,7 +298,7 @@
             // 
             // txtMaHoaDonBan
             // 
-            this.txtMaHoaDonBan.Location = new System.Drawing.Point(142, 16);
+            this.txtMaHoaDonBan.Location = new System.Drawing.Point(157, 28);
             this.txtMaHoaDonBan.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtMaHoaDonBan.Name = "txtMaHoaDonBan";
             this.txtMaHoaDonBan.Size = new System.Drawing.Size(170, 23);
@@ -329,7 +329,7 @@
             // 
             // txtGiaBan
             // 
-            this.txtGiaBan.Location = new System.Drawing.Point(457, 83);
+            this.txtGiaBan.Location = new System.Drawing.Point(576, 105);
             this.txtGiaBan.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtGiaBan.Name = "txtGiaBan";
             this.txtGiaBan.Size = new System.Drawing.Size(170, 23);
@@ -339,7 +339,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label6.Location = new System.Drawing.Point(358, 86);
+            this.label6.Location = new System.Drawing.Point(460, 107);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 20);
@@ -348,7 +348,7 @@
             // 
             // txtMaDoChoi
             // 
-            this.txtMaDoChoi.Location = new System.Drawing.Point(457, 46);
+            this.txtMaDoChoi.Location = new System.Drawing.Point(576, 67);
             this.txtMaDoChoi.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtMaDoChoi.Name = "txtMaDoChoi";
             this.txtMaDoChoi.Size = new System.Drawing.Size(170, 23);
@@ -358,7 +358,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(342, 46);
+            this.label5.Location = new System.Drawing.Point(460, 67);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(86, 20);
@@ -367,7 +367,7 @@
             // 
             // txtMaBan
             // 
-            this.txtMaBan.Location = new System.Drawing.Point(457, 13);
+            this.txtMaBan.Location = new System.Drawing.Point(576, 28);
             this.txtMaBan.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.txtMaBan.Name = "txtMaBan";
             this.txtMaBan.Size = new System.Drawing.Size(170, 23);
@@ -408,20 +408,20 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(811, 573);
+            this.panel1.Size = new System.Drawing.Size(811, 621);
             this.panel1.TabIndex = 65;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.groupBox1.Controls.Add(this.dgvDanhSachChiTietHoaDonBan);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.dgvDanhSachHoaDonBan);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 324);
+            this.groupBox1.Location = new System.Drawing.Point(23, 324);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
-            this.groupBox1.Size = new System.Drawing.Size(250, 159);
+            this.groupBox1.Size = new System.Drawing.Size(375, 244);
             this.groupBox1.TabIndex = 73;
             this.groupBox1.TabStop = false;
             // 
@@ -432,7 +432,7 @@
             this.label11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(7, 0);
+            this.label11.Location = new System.Drawing.Point(-4, 0);
             this.label11.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(184, 21);
@@ -443,12 +443,12 @@
             // 
             this.dgvDanhSachHoaDonBan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachHoaDonBan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachHoaDonBan.Location = new System.Drawing.Point(13, 19);
+            this.dgvDanhSachHoaDonBan.Location = new System.Drawing.Point(20, 29);
             this.dgvDanhSachHoaDonBan.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.dgvDanhSachHoaDonBan.Name = "dgvDanhSachHoaDonBan";
             this.dgvDanhSachHoaDonBan.RowHeadersWidth = 51;
             this.dgvDanhSachHoaDonBan.RowTemplate.Height = 24;
-            this.dgvDanhSachHoaDonBan.Size = new System.Drawing.Size(225, 132);
+            this.dgvDanhSachHoaDonBan.Size = new System.Drawing.Size(338, 203);
             this.dgvDanhSachHoaDonBan.TabIndex = 0;
             this.dgvDanhSachHoaDonBan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDanhSachHoaDonBan_CellClick);
             // 
@@ -456,7 +456,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 573);
+            this.ClientSize = new System.Drawing.Size(811, 621);
             this.Controls.Add(this.panel1);
             this.Name = "frmChiTietHoaDonBan";
             this.Text = "frmChiTietHoaDonBan";
