@@ -226,8 +226,12 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm ngăn kệ thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Không Thể Thêm Ngăn Kệ Đã Tồn Tại!");
+                    }
 
-                }
+                    }
                 catch (SqlException)
                 {
                     err = "Không thêm được ngăn kệ. Lỗi rồi!";

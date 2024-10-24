@@ -259,9 +259,12 @@ namespace DoAnCuaHangDoChoi
             // Không cho thao tác trên các nút Thêm / Trở về 
             this.btnThem.Enabled = false;
             this.btnTroVe.Enabled = false;
+            this.btnHuyBo.Enabled = true;
 
             // Đưa con trỏ đến TextField txtMaLoaiDoChoi
             this.txtMaDoChoi.Focus();
+            this.cbxMaLoaiDoChoi.Enabled = false;
+            this.txtTenLoaiDoChoi.Enabled = false;
         }
 
         private void btnXoa_Click_1(object sender, EventArgs e)
@@ -293,6 +296,7 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã xóa thành công!");
                     }
+                    else MessageBox.Show(err);
                 }
                 else
                 {
@@ -372,6 +376,8 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm đồ chơi thành công!");
                     }
+                    else
+                        MessageBox.Show(err);
 
                 }
                 catch (SqlException)
@@ -404,11 +410,13 @@ namespace DoAnCuaHangDoChoi
         private void btnDaBan_Click_1(object sender, EventArgs e)
         {
             dgvDoChoi.DataSource = dcbusiness.DoChoiDaBan().Tables[0];
+            dgvDoChoi_CellClick(null, null);
         }
 
         private void btnChuaBan_Click_1(object sender, EventArgs e)
         {
             dgvDoChoi.DataSource = dcbusiness.DoChoiChuaBan().Tables[0];
+            dgvDoChoi_CellClick(null, null);
         }
 
  

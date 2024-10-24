@@ -152,6 +152,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã xóa xong!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Xóa Không Thành Công Do Nhân Viên Chưa Hết Hợp Đồng!");
+                    }
                 }
                 else
                 {
@@ -187,6 +191,7 @@ namespace DoAnCuaHangDoChoi
             // Đưa con trỏ đến TextField txtMaNV 
             this.txtMaNhanVien.Enabled = false;
             this.txtCCCD.Focus();
+
         }
 
         private void btnHuyBo_Click(object sender, EventArgs e)
@@ -216,6 +221,7 @@ namespace DoAnCuaHangDoChoi
             this.btnHuyBo.Enabled = false;
             this.panel.Enabled = false;
             dgvDanhSachNhanVien_CellClick(null, null);
+            this.txtMaNhanVien.Enabled = true;
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -227,6 +233,7 @@ namespace DoAnCuaHangDoChoi
             this.btnTroVe.Enabled = true;
             this.btnReLoad.Enabled = true;
             this.btnLoc.Enabled = true;
+            this.btnHuyBo.Enabled=true;
 
             // Không cho thao tác trên các nút Lưu / Hủy / Panel 
             this.btnLuu.Enabled = false;
@@ -248,6 +255,10 @@ namespace DoAnCuaHangDoChoi
                         LoadNhanVien();
                         // Thông báo 
                         MessageBox.Show("Đã thêm xong!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không Thể Thêm Được Do Trùng CCCD Hoặc Mã Nhân Viên");
                     }
 
                 }

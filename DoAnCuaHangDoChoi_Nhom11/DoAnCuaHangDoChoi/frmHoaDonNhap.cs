@@ -222,6 +222,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm hóa đơn nhập thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Không Thể Thêm Do Mã Hóa Đơn Nhập Đã Tồn Tại!");
+                    }    
 
                 }
                 catch (SqlException)

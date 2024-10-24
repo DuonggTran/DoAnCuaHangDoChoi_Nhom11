@@ -117,11 +117,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmThongTin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmThongTin.Designer.cs">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmAdminHome.cs">
       <SubType>Form</SubType>
@@ -265,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhap.resx">
       <DependentUpon>frmNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThongTin.resx">
+      <DependentUpon>frmThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmXemCa.resx">
       <DependentUpon>frmXemCa.cs</DependentUpon>
@@ -460,6 +463,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bill %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy-shop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toy-shop1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets" Condition="Exists('..\packages\Microsoft.Data.SqlClient.SNI.5.2.0\build\net462\Microsoft.Data.SqlClient.SNI.targets')" />

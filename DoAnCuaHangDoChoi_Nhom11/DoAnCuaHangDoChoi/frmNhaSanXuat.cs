@@ -211,6 +211,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm nhà sản xuất thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show("Không Thể Thêm Do Mã Nhà Sản Xuất Đã Tồn Tại!");
+                    }    
 
                 }
                 catch (SqlException)

@@ -122,7 +122,6 @@ namespace DoAnCuaHangDoChoi
                 {
                     // Thực hiện câu lệnh SQL 
                     kq = dmdcbusiness.XoaDanhMucDoChoi(ref err, strMaLoaiDoChoi);
-                    MessageBox.Show(kq.ToString());
                     if (kq)
                     {
                         // Cập nhật lại DataGridView 
@@ -220,7 +219,8 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm loại đồ chơi thành công!");
                     }
-
+                    else
+                        MessageBox.Show("Không Thể Thêm Do Đã Tồn Tại Mã Đồ Chơi!");
                 }
                 catch (SqlException)
                 {

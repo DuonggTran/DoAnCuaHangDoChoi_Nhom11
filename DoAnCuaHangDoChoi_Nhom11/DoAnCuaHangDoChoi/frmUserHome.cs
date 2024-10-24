@@ -27,6 +27,13 @@ namespace DoAnCuaHangDoChoi
 
         }
 
+        
+        private void btnThongTin_Click(object sender, EventArgs e)
+        {
+            frmThongTin tt = new frmThongTin();
+            tt.ShowDialog();
+        }
+
         private void btnDanhMuc_Click(object sender, EventArgs e)
         {
             frmDanhMucDoChoi dmdc = new frmDanhMucDoChoi();
@@ -86,13 +93,5 @@ namespace DoAnCuaHangDoChoi
             if (traloi == DialogResult.OK)
                 this.Close();
         }
-
-        private void btnThongTin_Click(object sender, EventArgs e)
-        {
-            //frmThongTin tt = new frmThongTin();
-            //tt.ShowDialog();
-        }
-
-        
     }
 }
