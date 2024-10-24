@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCuaHangDoChoi
 {
-    public partial class Form1 : Form
+    public partial class frmThongTin : Form
     {
-        public Form1()
+        public frmThongTin()
         {
             InitializeComponent();
         }

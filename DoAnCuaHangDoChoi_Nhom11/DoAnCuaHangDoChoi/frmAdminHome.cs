@@ -72,7 +72,9 @@ namespace DoAnCuaHangDoChoi
             lich.Dock = DockStyle.Fill;
             lich.Size = panel2.Size;
             panel2.Controls.Add(lich);
+            this.lblTitle.Hide();
             lich.Show();
+
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -101,8 +103,8 @@ namespace DoAnCuaHangDoChoi
 
         private void btnThongTin_Click(object sender, EventArgs e)
         {
-            //frmThongTin tt = new frmThongTin();
-            //tt.ShowDialog();
+            frmThongTin tt = new frmThongTin();
+            tt.ShowDialog();
         }
     }
 }

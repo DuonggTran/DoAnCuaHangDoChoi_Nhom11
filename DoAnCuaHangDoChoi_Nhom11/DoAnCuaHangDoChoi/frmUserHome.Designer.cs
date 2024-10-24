@@ -34,7 +34,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.btnThongTin = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -44,6 +43,7 @@
             this.btnNhaSanXuat = new System.Windows.Forms.Button();
             this.btnHoaDonNhap = new System.Windows.Forms.Button();
             this.btnDoChoi = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -130,18 +130,6 @@
             this.label3.TabIndex = 18;
             this.label3.Text = "Chi Tiết";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(4, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 32);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Nhóm 10";
-            // 
             // btnDangXuat
             // 
             this.btnDangXuat.AutoSize = true;
@@ -156,6 +144,7 @@
             this.btnDangXuat.Size = new System.Drawing.Size(79, 48);
             this.btnDangXuat.TabIndex = 7;
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // btnThongTin
             // 
@@ -171,6 +160,7 @@
             this.btnThongTin.Size = new System.Drawing.Size(53, 48);
             this.btnThongTin.TabIndex = 9;
             this.btnThongTin.UseVisualStyleBackColor = false;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // btnThoat
             // 
@@ -184,6 +174,7 @@
             this.btnThoat.Size = new System.Drawing.Size(61, 48);
             this.btnThoat.TabIndex = 8;
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnDanhMuc
             // 
@@ -203,6 +194,7 @@
             this.btnDanhMuc.Text = "Danh Mục";
             this.btnDanhMuc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDanhMuc.UseVisualStyleBackColor = false;
+            this.btnDanhMuc.Click += new System.EventHandler(this.btnDanhMuc_Click);
             // 
             // btnHoaDonBan
             // 
@@ -220,6 +212,7 @@
             this.btnHoaDonBan.Text = "Hóa Đơn Bán";
             this.btnHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHoaDonBan.UseVisualStyleBackColor = false;
+            this.btnHoaDonBan.Click += new System.EventHandler(this.btnHoaDonBan_Click);
             // 
             // btnNganKe
             // 
@@ -237,6 +230,7 @@
             this.btnNganKe.Text = "Ngăn Kệ";
             this.btnNganKe.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNganKe.UseVisualStyleBackColor = false;
+            this.btnNganKe.Click += new System.EventHandler(this.btnNganKe_Click);
             // 
             // btnNhaSanXuat
             // 
@@ -254,6 +248,7 @@
             this.btnNhaSanXuat.Text = "Nhà Sản Xuất";
             this.btnNhaSanXuat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNhaSanXuat.UseVisualStyleBackColor = false;
+            this.btnNhaSanXuat.Click += new System.EventHandler(this.btnNhaSanXuat_Click);
             // 
             // btnHoaDonNhap
             // 
@@ -271,6 +266,7 @@
             this.btnHoaDonNhap.Text = "Hóa Đơn Nhập";
             this.btnHoaDonNhap.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHoaDonNhap.UseVisualStyleBackColor = false;
+            this.btnHoaDonNhap.Click += new System.EventHandler(this.btnHoaDonNhap_Click);
             // 
             // btnDoChoi
             // 
@@ -288,6 +284,19 @@
             this.btnDoChoi.Text = "Đồ Chơi";
             this.btnDoChoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDoChoi.UseVisualStyleBackColor = false;
+            this.btnDoChoi.Click += new System.EventHandler(this.btnDoChoi_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(4, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 32);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Nhóm 10";
             // 
             // pictureBox2
             // 

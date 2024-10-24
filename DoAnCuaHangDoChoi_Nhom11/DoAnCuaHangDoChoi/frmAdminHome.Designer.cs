@@ -31,8 +31,13 @@
             this.flpNav = new System.Windows.Forms.FlowLayoutPanel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnHoaDonBan = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnThongTin = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.btnTaiKhoan = new System.Windows.Forms.Button();
             this.btnNhanVien = new System.Windows.Forms.Button();
             this.btnDanhMuc = new System.Windows.Forms.Button();
@@ -40,22 +45,20 @@
             this.btnNganKe = new System.Windows.Forms.Button();
             this.btnNhaSanXuat = new System.Windows.Forms.Button();
             this.btnHoaDonNhap = new System.Windows.Forms.Button();
+            this.btnHoaDonBan = new System.Windows.Forms.Button();
             this.btnThongKe = new System.Windows.Forms.Button();
             this.btnCaLam = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnDangXuat = new System.Windows.Forms.Button();
-            this.btnThongTin = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.flpNav.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // flpNav
             // 
+            this.flpNav.AutoScroll = true;
             this.flpNav.AutoSize = true;
             this.flpNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
             this.flpNav.Controls.Add(this.panel3);
@@ -73,7 +76,7 @@
             this.flpNav.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flpNav.Location = new System.Drawing.Point(0, 0);
             this.flpNav.Name = "flpNav";
-            this.flpNav.Size = new System.Drawing.Size(265, 880);
+            this.flpNav.Size = new System.Drawing.Size(265, 748);
             this.flpNav.TabIndex = 3;
             this.flpNav.WrapContents = false;
             // 
@@ -91,41 +94,107 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(53, 6);
+            this.label1.Location = new System.Drawing.Point(45, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(144, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "ADMIN";
             // 
-            // btnHoaDonBan
+            // panel1
             // 
-            this.btnHoaDonBan.AutoSize = true;
-            this.btnHoaDonBan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHoaDonBan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.btnHoaDonBan.FlatAppearance.BorderSize = 0;
-            this.btnHoaDonBan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
-            this.btnHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDonBan.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHoaDonBan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnHoaDonBan.Image = global::DoAnCuaHangDoChoi.Properties.Resources.bill1;
-            this.btnHoaDonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoaDonBan.Location = new System.Drawing.Point(3, 644);
-            this.btnHoaDonBan.Margin = new System.Windows.Forms.Padding(3, 7, 7, 3);
-            this.btnHoaDonBan.Name = "btnHoaDonBan";
-            this.btnHoaDonBan.Size = new System.Drawing.Size(255, 70);
-            this.btnHoaDonBan.TabIndex = 8;
-            this.btnHoaDonBan.Text = "Hoá đơn bán";
-            this.btnHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHoaDonBan.UseVisualStyleBackColor = true;
-            this.btnHoaDonBan.Click += new System.EventHandler(this.btnHoaDonBan_Click);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.btnDangXuat);
+            this.panel1.Controls.Add(this.btnThongTin);
+            this.panel1.Controls.Add(this.btnThoat);
+            this.panel1.Location = new System.Drawing.Point(264, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(698, 74);
+            this.panel1.TabIndex = 6;
             // 
-            // panel2
+            // label5
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel2.Location = new System.Drawing.Point(206, 72);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(687, 808);
-            this.panel2.TabIndex = 5;
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(638, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 17);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Thoát";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(542, 48);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 17);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Đăng Xuất";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(470, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Chi Tiết";
+            // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.AutoSize = true;
+            this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnDangXuat.BackgroundImage = global::DoAnCuaHangDoChoi.Properties.Resources.exit;
+            this.btnDangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDangXuat.FlatAppearance.BorderSize = 0;
+            this.btnDangXuat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
+            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDangXuat.Location = new System.Drawing.Point(541, 12);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(79, 33);
+            this.btnDangXuat.TabIndex = 10;
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
+            // 
+            // btnThongTin
+            // 
+            this.btnThongTin.AutoSize = true;
+            this.btnThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnThongTin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnThongTin.FlatAppearance.BorderSize = 0;
+            this.btnThongTin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
+            this.btnThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongTin.Image = global::DoAnCuaHangDoChoi.Properties.Resources.info__1_;
+            this.btnThongTin.Location = new System.Drawing.Point(473, 7);
+            this.btnThongTin.Name = "btnThongTin";
+            this.btnThongTin.Size = new System.Drawing.Size(53, 38);
+            this.btnThongTin.TabIndex = 12;
+            this.btnThongTin.UseVisualStyleBackColor = false;
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.btnThoat.FlatAppearance.BorderSize = 0;
+            this.btnThoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
+            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThoat.Image = global::DoAnCuaHangDoChoi.Properties.Resources.power;
+            this.btnThoat.Location = new System.Drawing.Point(627, 12);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(61, 33);
+            this.btnThoat.TabIndex = 11;
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnTaiKhoan
             // 
@@ -281,6 +350,28 @@
             this.btnHoaDonNhap.UseVisualStyleBackColor = true;
             this.btnHoaDonNhap.Click += new System.EventHandler(this.btnHoaDonNhap_Click);
             // 
+            // btnHoaDonBan
+            // 
+            this.btnHoaDonBan.AutoSize = true;
+            this.btnHoaDonBan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnHoaDonBan.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.btnHoaDonBan.FlatAppearance.BorderSize = 0;
+            this.btnHoaDonBan.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(237)))), ((int)(((byte)(183)))));
+            this.btnHoaDonBan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDonBan.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHoaDonBan.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnHoaDonBan.Image = global::DoAnCuaHangDoChoi.Properties.Resources.bill1;
+            this.btnHoaDonBan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDonBan.Location = new System.Drawing.Point(3, 644);
+            this.btnHoaDonBan.Margin = new System.Windows.Forms.Padding(3, 7, 7, 3);
+            this.btnHoaDonBan.Name = "btnHoaDonBan";
+            this.btnHoaDonBan.Size = new System.Drawing.Size(255, 70);
+            this.btnHoaDonBan.TabIndex = 8;
+            this.btnHoaDonBan.Text = "Hoá đơn bán";
+            this.btnHoaDonBan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnHoaDonBan.UseVisualStyleBackColor = true;
+            this.btnHoaDonBan.Click += new System.EventHandler(this.btnHoaDonBan_Click);
+            // 
             // btnThongKe
             // 
             this.btnThongKe.AutoSize = true;
@@ -325,108 +416,35 @@
             this.btnCaLam.UseVisualStyleBackColor = true;
             this.btnCaLam.Click += new System.EventHandler(this.btnCaLam_Click);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.btnDangXuat);
-            this.panel1.Controls.Add(this.btnThongTin);
-            this.panel1.Controls.Add(this.btnThoat);
-            this.panel1.Location = new System.Drawing.Point(264, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(629, 74);
-            this.panel1.TabIndex = 6;
+            this.panel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel2.BackgroundImage = global::DoAnCuaHangDoChoi.Properties.Resources.toy_shop;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel2.Controls.Add(this.lblTitle);
+            this.panel2.Location = new System.Drawing.Point(264, 77);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(698, 671);
+            this.panel2.TabIndex = 5;
             // 
-            // btnDangXuat
+            // lblTitle
             // 
-            this.btnDangXuat.AutoSize = true;
-            this.btnDangXuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.btnDangXuat.BackgroundImage = global::DoAnCuaHangDoChoi.Properties.Resources.exit;
-            this.btnDangXuat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDangXuat.FlatAppearance.BorderSize = 0;
-            this.btnDangXuat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
-            this.btnDangXuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDangXuat.Location = new System.Drawing.Point(463, 13);
-            this.btnDangXuat.Name = "btnDangXuat";
-            this.btnDangXuat.Size = new System.Drawing.Size(79, 33);
-            this.btnDangXuat.TabIndex = 10;
-            this.btnDangXuat.UseVisualStyleBackColor = false;
-            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
-            // 
-            // btnThongTin
-            // 
-            this.btnThongTin.AutoSize = true;
-            this.btnThongTin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.btnThongTin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnThongTin.FlatAppearance.BorderSize = 0;
-            this.btnThongTin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
-            this.btnThongTin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongTin.Image = global::DoAnCuaHangDoChoi.Properties.Resources.info__1_;
-            this.btnThongTin.Location = new System.Drawing.Point(395, 8);
-            this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Size = new System.Drawing.Size(53, 38);
-            this.btnThongTin.TabIndex = 12;
-            this.btnThongTin.UseVisualStyleBackColor = false;
-            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.btnThoat.FlatAppearance.BorderSize = 0;
-            this.btnThoat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(106)))));
-            this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThoat.Image = global::DoAnCuaHangDoChoi.Properties.Resources.power;
-            this.btnThoat.Location = new System.Drawing.Point(549, 13);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(61, 33);
-            this.btnThoat.TabIndex = 11;
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(560, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 17);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Thoát";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(464, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 17);
-            this.label4.TabIndex = 22;
-            this.label4.Text = "Đăng Xuất";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(392, 49);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Chi Tiết";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(58)))), ((int)(((byte)(45)))));
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitle.Location = new System.Drawing.Point(125, 473);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(445, 45);
+            this.lblTitle.TabIndex = 22;
+            this.lblTitle.Text = "Cửa Hàng Đồ Chơi Nhóm 11";
             // 
             // frmAdminHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(892, 880);
+            this.ClientSize = new System.Drawing.Size(964, 748);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.flpNav);
             this.Controls.Add(this.panel2);
@@ -441,6 +459,8 @@
             this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,5 +489,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
