@@ -293,6 +293,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã xóa thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show(err.ToString());
+                    }    
                 }
                 else
                 {
@@ -372,6 +376,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm đồ chơi thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show(err.ToString());
+                    }
 
                 }
                 catch (SqlException)
@@ -397,6 +405,10 @@ namespace DoAnCuaHangDoChoi
                     LoadDoChoi();
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show(err.ToString());
                 }
             }
         }

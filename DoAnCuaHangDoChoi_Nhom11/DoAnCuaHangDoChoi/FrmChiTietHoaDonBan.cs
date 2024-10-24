@@ -273,7 +273,7 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Lỗi Không Thể Thêm Chi Tiết Hóa Đơn Do Đã Tồn Tại Mã Bán");
+                        MessageBox.Show(err);
                     }    
 
                 }

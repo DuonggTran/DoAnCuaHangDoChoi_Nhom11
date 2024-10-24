@@ -46,12 +46,12 @@ namespace DoAnCuaHangDoChoi
         }
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
-            frmHoaDonNhap n = new frmHoaDonNhap();
+            frmNhap n = new frmNhap();
             n.ShowDialog();
         }
         private void btnHoaDonBan_Click(object sender, EventArgs e)
         {
-            frmHoaDonBan b = new frmHoaDonBan();
+            frmBan b = new frmBan();
             b.ShowDialog();
         }
         private void btnThongKe_Click(object sender, EventArgs e)
