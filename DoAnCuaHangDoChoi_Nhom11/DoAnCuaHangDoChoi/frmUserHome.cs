@@ -41,8 +41,8 @@ namespace DoAnCuaHangDoChoi
 
         private void btnHoaDonNhap_Click(object sender, EventArgs e)
         {
-            //frmNhap n = new frmNhap();
-           // n.ShowDialog();
+            frmNhap n = new frmNhap();
+            n.ShowDialog();
         }
 
         private void btnDoChoi_Click(object sender, EventArgs e)
@@ -59,8 +59,8 @@ namespace DoAnCuaHangDoChoi
 
         private void btnHoaDonBan_Click(object sender, EventArgs e)
         {
-           // frmBan b = new frmBan();
-            //b.ShowDialog();
+            frmBan b = new frmBan();
+            b.ShowDialog();
         }
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -92,5 +92,7 @@ namespace DoAnCuaHangDoChoi
             //frmThongTin tt = new frmThongTin();
             //tt.ShowDialog();
         }
+
+        
     }
 }
