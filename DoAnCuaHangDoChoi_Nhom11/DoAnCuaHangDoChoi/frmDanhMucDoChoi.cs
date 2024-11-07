@@ -54,9 +54,9 @@ namespace DoAnCuaHangDoChoi
                 // Sự kiện click chuột
                 dgvDanhMucDoChoi_CellClick(null, null);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không lấy được nội dung loại đồ chơi. Đã xảy ra lỗi!");
+                MessageBox.Show(ex.ToString());
             }
         }
 
