@@ -28,7 +28,7 @@ namespace BusinessLogicLayer
                 new SqlParameter("@MaNhap", manhap),
                 new SqlParameter("@MaHoaDonNhap", mahoadonnhap),
                 new SqlParameter("@MaDoChoi", madochoi),
-                new SqlParameter("@GiaNhap", Int32.Parse(gianhap)));
+                new SqlParameter("@GiaNhap", gianhap));
         }
         //Cập nhật chi tiết hóa đơn nhập
         public bool CapNhatChiTietHoaDonNhap(ref string err, string manhap, string mahoadonnhap, string madochoi, string gianhap)
@@ -37,7 +37,7 @@ namespace BusinessLogicLayer
                 new SqlParameter("@manhap", manhap),
                 new SqlParameter("@mahoadonnhap", mahoadonnhap),
                 new SqlParameter("@madochoi", madochoi),
-                new SqlParameter("@gianhap", Int32.Parse(gianhap)));
+                new SqlParameter("@gianhap", gianhap));
         }
         //Xoá chi tiết hoá đơn nhập
         public bool XoaChiTietHoaDonNhap(ref string err, string manhap)

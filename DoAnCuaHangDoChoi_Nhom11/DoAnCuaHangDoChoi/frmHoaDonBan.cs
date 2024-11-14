@@ -241,7 +241,7 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Không Thể Thêm Do Mã Hóa Đơn Bán Đã Tồn Tại!");
+                        MessageBox.Show(err);
                     }    
 
                 }
@@ -268,7 +268,7 @@ namespace DoAnCuaHangDoChoi
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
                 }
-                else { MessageBox.Show("Nhân Viên Không Tồn Tại!"); } 
+                else { MessageBox.Show(err); } 
                     
             }
 

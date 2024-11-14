@@ -26,7 +26,7 @@ namespace BusinessLogicLayer
         {
             return db.MyExecuteNonQuery("USP_ThemHoaDonNhap", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@ma_hoa_don_nhap", mahoadonnhap),
-                new SqlParameter("@ngay_nhap", DateTime.Parse(ngaynhap)),
+                new SqlParameter("@ngay_nhap", ngaynhap),
                 new SqlParameter("@ma_nhan_vien", manhanvien));
         }
         //Cập nhật hoá đơn nhập
@@ -34,7 +34,7 @@ namespace BusinessLogicLayer
         {
             return db.MyExecuteNonQuery("USP_CapNhatHoaDonNhap", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@mahoadonnhap", mahoadonnhap),
-                new SqlParameter("@ngaynhap", DateTime.Parse(ngaynhap)),
+                new SqlParameter("@ngaynhap", ngaynhap),
                 new SqlParameter("@manhanvien", manhanvien));
         }
         //Xoá hoá đơn nhập

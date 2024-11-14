@@ -29,7 +29,7 @@ namespace BusinessLogicLayer
             return db.ExecuteQueryDataSet("USP_NgankeSucchuaSoluong", CommandType.StoredProcedure);
         }
         // Thêm ngăn kệ
-        public bool ThemNganKe(ref string err, string MaNganKe, string ViTri, int SucChua)
+        public bool ThemNganKe(ref string err, string MaNganKe, string ViTri, String SucChua)
         {
             return db.MyExecuteNonQuery("USP_ThemNganKe", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@MaNganKe", MaNganKe),
@@ -43,7 +43,7 @@ namespace BusinessLogicLayer
                 new SqlParameter("@ma_ngan_ke", MaNganKe));
         }
         // Cập nhật ngăn kệ
-        public bool CapNhatNganKe(ref string err, string MaNganKe, string ViTri, int SucChua)
+        public bool CapNhatNganKe(ref string err, string MaNganKe, string ViTri, String SucChua)
         {
             return db.MyExecuteNonQuery("USP_CapNhatNganKe", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@manganke", MaNganKe),

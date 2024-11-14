@@ -122,8 +122,8 @@ namespace DoAnCuaHangDoChoi
                     else
                     {
                         MessageBox.Show(err);
-                    }    
-                    
+                    }
+
                 }
                 else
                 {
@@ -213,8 +213,8 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Không Thể Thêm Do Mã Nhà Sản Xuất Đã Tồn Tại!");
-                    }    
+                        MessageBox.Show(err);
+                    }
 
                 }
                 catch (SqlException)
@@ -239,6 +239,10 @@ namespace DoAnCuaHangDoChoi
                     LoadNhaSanXuat();
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show(err);
                 }
             }
         }

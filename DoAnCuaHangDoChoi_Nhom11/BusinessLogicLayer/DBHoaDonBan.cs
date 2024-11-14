@@ -26,16 +26,16 @@ namespace BusinessLogicLayer
         {
             return db.MyExecuteNonQuery("USP_ThemHoaDonBan", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@mahoadonban", mahoadonban),
-                new SqlParameter("@ngayban", DateTime.Parse(ngayBan)),
+                new SqlParameter("@ngayban", ngayBan),
                 new SqlParameter("@manhanvien", manhanvien));
         }
         //Cập nhật hoá đơn bán
         public bool CapNhatHoaDonBan(ref string err, string mahoadonban, string ngayBan, string manhanvien)
         {
             return db.MyExecuteNonQuery("USP_CapNhatHoaDonBan", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@ma_hoa_don_ban", mahoadonban),
-                new SqlParameter("@ngay_ban", DateTime.Parse(ngayBan)),
-                new SqlParameter("@ma_nhan_vien", manhanvien));
+                new SqlParameter("@mahoadonban", mahoadonban),
+                new SqlParameter("@ngayban", ngayBan),
+                new SqlParameter("@manhanvien", manhanvien));
         }
         //Xoá hoá đơn bán
         public bool XoaHoaDonBan(ref string err, string mahoadonban)

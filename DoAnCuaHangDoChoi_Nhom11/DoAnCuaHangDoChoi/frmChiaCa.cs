@@ -144,7 +144,7 @@ namespace DoAnCuaHangDoChoi
             this.btnLuu.Enabled = false;
             this.btnHuyBo.Enabled = false;
             this.panel.Enabled = false;
-
+            bool kq1 = false;
             bool kq = false;
             string err = "";
 
@@ -186,7 +186,12 @@ namespace DoAnCuaHangDoChoi
                 try
                 {
                     kq = calam.ThemCaLam(ref err, maCa, txtMaNhanVien.Text, cboCaLam.Text, DateTime.Parse(dtpNgay.Text), thoiGianBD, thoiGianKT);
-                    bool kq1 = calam1.ThemCaLam(ref err, maCa, txtMaNhanVien.Text);
+                    kq1 = calam1.ThemCaLam(ref err, txtMaNhanVien.Text, maCa);
+                    if (!kq1)
+                    {
+                        MessageBox.Show("Không thêm được ca vào bảng PhanCa. Lỗi: " + err);
+                        return; // Dừng nếu không thêm được vào PhanCa
+                    }
                     if (kq)
                     {
                         // Load lại dữ liệu trên DataGridView 

@@ -93,5 +93,11 @@ namespace DoAnCuaHangDoChoi
             if (traloi == DialogResult.OK)
                 this.Close();
         }
+
+        private void XemCa_Click(object sender, EventArgs e)
+        {
+            frmXemCa xc = new frmXemCa();
+            xc.ShowDialog();
+        }
     }
 }

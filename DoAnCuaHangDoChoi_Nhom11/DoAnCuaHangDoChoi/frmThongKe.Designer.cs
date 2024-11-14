@@ -406,10 +406,10 @@
             this.panel4.Controls.Add(this.btnDoanhThuTheoNam);
             this.panel4.Controls.Add(this.btnLoiNhuanTheoNam);
             this.panel4.Controls.Add(this.cbxNam);
-            this.panel4.Location = new System.Drawing.Point(1246, 477);
+            this.panel4.Location = new System.Drawing.Point(1217, 433);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(558, 185);
+            this.panel4.Size = new System.Drawing.Size(590, 185);
             this.panel4.TabIndex = 58;
             // 
             // lblNam
@@ -418,10 +418,10 @@
             this.lblNam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblNam.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblNam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblNam.Location = new System.Drawing.Point(4, 3);
+            this.lblNam.Location = new System.Drawing.Point(-11, -2);
             this.lblNam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNam.Name = "lblNam";
-            this.lblNam.Size = new System.Drawing.Size(252, 182);
+            this.lblNam.Size = new System.Drawing.Size(308, 182);
             this.lblNam.TabIndex = 14;
             this.lblNam.Text = "Năm";
             this.lblNam.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -435,7 +435,7 @@
             this.btnDoanhThuTheoNam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnDoanhThuTheoNam.Image = ((System.Drawing.Image)(resources.GetObject("btnDoanhThuTheoNam.Image")));
             this.btnDoanhThuTheoNam.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDoanhThuTheoNam.Location = new System.Drawing.Point(260, 55);
+            this.btnDoanhThuTheoNam.Location = new System.Drawing.Point(293, 67);
             this.btnDoanhThuTheoNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnDoanhThuTheoNam.Name = "btnDoanhThuTheoNam";
             this.btnDoanhThuTheoNam.Size = new System.Drawing.Size(297, 49);
@@ -454,7 +454,7 @@
             this.btnLoiNhuanTheoNam.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLoiNhuanTheoNam.Image = ((System.Drawing.Image)(resources.GetObject("btnLoiNhuanTheoNam.Image")));
             this.btnLoiNhuanTheoNam.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLoiNhuanTheoNam.Location = new System.Drawing.Point(260, 135);
+            this.btnLoiNhuanTheoNam.Location = new System.Drawing.Point(298, 134);
             this.btnLoiNhuanTheoNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLoiNhuanTheoNam.Name = "btnLoiNhuanTheoNam";
             this.btnLoiNhuanTheoNam.Size = new System.Drawing.Size(292, 46);
@@ -469,7 +469,7 @@
             this.cbxNam.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.cbxNam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxNam.FormattingEnabled = true;
-            this.cbxNam.Location = new System.Drawing.Point(260, 0);
+            this.cbxNam.Location = new System.Drawing.Point(298, 0);
             this.cbxNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbxNam.Name = "cbxNam";
             this.cbxNam.Size = new System.Drawing.Size(294, 41);
@@ -542,10 +542,10 @@
             this.lblTongDoanhThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblTongDoanhThu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTongDoanhThu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(209)))), ((int)(((byte)(160)))));
-            this.lblTongDoanhThu.Location = new System.Drawing.Point(662, 158);
+            this.lblTongDoanhThu.Location = new System.Drawing.Point(630, 158);
             this.lblTongDoanhThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTongDoanhThu.Name = "lblTongDoanhThu";
-            this.lblTongDoanhThu.Size = new System.Drawing.Size(207, 48);
+            this.lblTongDoanhThu.Size = new System.Drawing.Size(272, 48);
             this.lblTongDoanhThu.TabIndex = 52;
             this.lblTongDoanhThu.Text = "DTT";
             this.lblTongDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -555,10 +555,10 @@
             this.lblLoiNhuanThang.BackColor = System.Drawing.Color.Transparent;
             this.lblLoiNhuanThang.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoiNhuanThang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(134)))), ((int)(((byte)(216)))));
-            this.lblLoiNhuanThang.Location = new System.Drawing.Point(372, 157);
+            this.lblLoiNhuanThang.Location = new System.Drawing.Point(339, 157);
             this.lblLoiNhuanThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoiNhuanThang.Name = "lblLoiNhuanThang";
-            this.lblLoiNhuanThang.Size = new System.Drawing.Size(207, 48);
+            this.lblLoiNhuanThang.Size = new System.Drawing.Size(255, 48);
             this.lblLoiNhuanThang.TabIndex = 51;
             this.lblLoiNhuanThang.Text = "DTT";
             this.lblLoiNhuanThang.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -577,10 +577,10 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::DoAnCuaHangDoChoi.Properties.Resources.dry_clean;
-            this.pictureBox6.Location = new System.Drawing.Point(615, 23);
+            this.pictureBox6.Location = new System.Drawing.Point(602, 23);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(302, 312);
+            this.pictureBox6.Size = new System.Drawing.Size(325, 312);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 49;
             this.pictureBox6.TabStop = false;
@@ -633,7 +633,7 @@
             this.chrDoanhThu.ChartAreas.Add(chartArea3);
             legend3.Name = "Legend1";
             this.chrDoanhThu.Legends.Add(legend3);
-            this.chrDoanhThu.Location = new System.Drawing.Point(4, 375);
+            this.chrDoanhThu.Location = new System.Drawing.Point(-5, 380);
             this.chrDoanhThu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chrDoanhThu.Name = "chrDoanhThu";
             this.chrDoanhThu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;

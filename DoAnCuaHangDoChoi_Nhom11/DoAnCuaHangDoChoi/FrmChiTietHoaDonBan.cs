@@ -270,10 +270,11 @@ namespace DoAnCuaHangDoChoi
                         LoadChiTietHoaDonBan();
                         // Thông báo 
                         MessageBox.Show("Đã thêm chi tiết hóa đơn bán thành công!");
+                        this.txtMaHoaDonBan.Enabled = true;
                     }
                     else
                     {
-                        MessageBox.Show("Lỗi Không Thể Thêm Chi Tiết Hóa Đơn Do Đã Tồn Tại Mã Bán");
+                        MessageBox.Show(err);
                     }    
 
                 }
@@ -299,15 +300,16 @@ namespace DoAnCuaHangDoChoi
                     LoadChiTietHoaDonBan();
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
+                    this.txtMaHoaDonBan.Enabled = false;
                 }
                 else
                 {
-                    MessageBox.Show("Không Thể Cập Nhập!");
+                    MessageBox.Show(err);
                 } 
             }
             this.btnReLoad.Enabled = true;
             this.btnXoa.Enabled = true;
-            this.txtMaHoaDonBan.Enabled = true;
+        
         }
 
         private void btnReLoad_Click(object sender, EventArgs e)

@@ -26,18 +26,18 @@ namespace BusinessLogicLayer
         {
             return db.MyExecuteNonQuery("USP_ThemChiTietHoaDonBan", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@maban", maban),
-                new SqlParameter("@mahoadon", mahoadonban),
+                new SqlParameter("@mahoadonban", mahoadonban),
                 new SqlParameter("@madochoi", madochoi),
-                new SqlParameter("@giaban", Int32.Parse(giaban)));
+                new SqlParameter("@giaban", giaban));
         }
         //Cập nhật chi tiết hóa đơn bán
         public bool CapNhatChiTietHoaDonBan(ref string err, string maban, string mahoadonban, string madochoi, string giaban)
         {
             return db.MyExecuteNonQuery("USP_CapNhatChiTietHoaDonBan", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@MaBan", maban),
-                new SqlParameter("@MaHoaDonBan", mahoadonban),
-                new SqlParameter("@MaDoChoi", madochoi),
-                new SqlParameter("@GiaBan", Int32.Parse(giaban)));
+                new SqlParameter("@maban", maban),
+                new SqlParameter("@mahoadonban", mahoadonban),
+                new SqlParameter("@madochoi", madochoi),
+                new SqlParameter("@giaban", giaban));
         }
         //Xoá chi tiết hóa đơn bán
         public bool XoaChiTietHoaDonBan(ref string err, string maban)

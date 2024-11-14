@@ -54,9 +54,9 @@ namespace DoAnCuaHangDoChoi
                 // Sự kiện click chuột
                 dgvDanhMucDoChoi_CellClick(null, null);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
-                MessageBox.Show("Không lấy được nội dung loại đồ chơi. Đã xảy ra lỗi!");
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -122,6 +122,7 @@ namespace DoAnCuaHangDoChoi
                 {
                     // Thực hiện câu lệnh SQL 
                     kq = dmdcbusiness.XoaDanhMucDoChoi(ref err, strMaLoaiDoChoi);
+                    MessageBox.Show(kq.ToString());
                     if (kq)
                     {
                         // Cập nhật lại DataGridView 
@@ -220,7 +221,10 @@ namespace DoAnCuaHangDoChoi
                         MessageBox.Show("Đã thêm loại đồ chơi thành công!");
                     }
                     else
-                        MessageBox.Show("Không Thể Thêm Do Đã Tồn Tại Mã Đồ Chơi!");
+                    {
+                        MessageBox.Show(err);
+                    }
+
                 }
                 catch (SqlException)
                 {
@@ -244,6 +248,10 @@ namespace DoAnCuaHangDoChoi
                     LoadDanhMucDoChoi();
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show(err);
                 }
             }
         }

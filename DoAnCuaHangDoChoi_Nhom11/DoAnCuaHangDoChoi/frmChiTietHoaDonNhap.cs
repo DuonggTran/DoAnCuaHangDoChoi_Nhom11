@@ -200,6 +200,7 @@ namespace DoAnCuaHangDoChoi
             this.btnXoa.Enabled = false;
             this.btnTroVe.Enabled = false;
             // Đưa con trỏ đến TextField txtMaNhap
+            this.txtMaNhap.Enabled = false;
             this.txtMaHoaDonNhap.Enabled = false;
             this.txtNgayNhap.Focus();
             this.txtNgayNhap.Enabled = false;
@@ -251,7 +252,7 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Lỗi Không Thể Thêm Chi Tiết Hóa Đơn Do Đã Tồn Tại Mã Nhập");
+                        MessageBox.Show(err);
                     }
 
                 }
@@ -280,7 +281,7 @@ namespace DoAnCuaHangDoChoi
                 }
                 else
                 {
-                    MessageBox.Show("Không Thể Cập Nhập!");
+                    MessageBox.Show(err);
                 }
             }
             this.btnReLoad.Enabled = true;

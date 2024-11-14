@@ -220,6 +220,10 @@ namespace DoAnCuaHangDoChoi
                         // Thông báo 
                         MessageBox.Show("Đã thêm tài khoản thành công!");
                     }
+                    else
+                    {
+                        MessageBox.Show(err);
+                    }
 
                 }
                 catch (SqlException)
@@ -245,6 +249,10 @@ namespace DoAnCuaHangDoChoi
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
                 }
+                else
+                {
+                    MessageBox.Show(err);
+                }
             }
         }
 
@@ -263,7 +271,9 @@ namespace DoAnCuaHangDoChoi
             this.txtLoaiNguoiDung.Text = dgvTaiKhoan.Rows[r].Cells[2].Value.ToString();
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
-    
+        }
     }
 }

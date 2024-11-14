@@ -36,7 +36,7 @@ namespace BusinessLogicLayer
             return db.ExecuteQueryDataSet("USP_DoChoiChuaBan", CommandType.StoredProcedure);
         }
 
-        public bool ThemDoChoi(ref string err, string MaDoChoi, string TenDoChoi, int GiaTien, string MaLoaiDoChoi, string MaNSX, string MaNganKe)
+        public bool ThemDoChoi(ref string err, string MaDoChoi, string TenDoChoi, string GiaTien, string MaLoaiDoChoi, string MaNSX, string MaNganKe)
         {
             return db.MyExecuteNonQuery("USP_ThemDoChoi", CommandType.StoredProcedure, ref err,
                 new SqlParameter("@ma_do_choi", MaDoChoi),

@@ -218,7 +218,7 @@ namespace DoAnCuaHangDoChoi
             {
                 try
                 {
-                    kq = nkbusiness.ThemNganKe(ref err, txtMaNganKe.Text, txtViTri.Text, int.Parse(txtSucChua.Text));
+                    kq = nkbusiness.ThemNganKe(ref err, txtMaNganKe.Text, txtViTri.Text, txtSucChua.Text);
                     if (kq)
                     {
                         // Load lại dữ liệu trên DataGridView 
@@ -228,14 +228,19 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Không Thể Thêm Ngăn Kệ Đã Tồn Tại!");
+                        MessageBox.Show(err);
                     }
 
-                    }
+                }
                 catch (SqlException)
                 {
                     err = "Không thêm được ngăn kệ. Lỗi rồi!";
                     MessageBox.Show(err);
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Vui lòng nhập đúng thông tin");
                 }
             }
             else
@@ -247,13 +252,17 @@ namespace DoAnCuaHangDoChoi
                 string strMaNganKe =
                 dgvDanhSachNganKe.Rows[r].Cells[0].Value.ToString();
                 // Câu lệnh SQL 
-                kq = nkbusiness.CapNhatNganKe(ref err, txtMaNganKe.Text, txtViTri.Text, int.Parse(txtSucChua.Text));
+                kq = nkbusiness.CapNhatNganKe(ref err, txtMaNganKe.Text, txtViTri.Text, txtSucChua.Text);
                 if (kq)
                 {
                     // Load lại dữ liệu trên DataGridView 
                     LoadNganKe();
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
+                }
+                else
+                {
+                    MessageBox.Show(err);
                 }
             }
         }

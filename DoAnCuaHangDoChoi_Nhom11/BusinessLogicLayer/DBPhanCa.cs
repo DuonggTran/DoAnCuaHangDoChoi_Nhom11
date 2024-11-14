@@ -24,11 +24,11 @@ namespace BusinessLogicLayer
         {
             return db.ExecuteQueryDataSet("USP_LoadCaLam_TheoNgay", CommandType.StoredProcedure);
         }
-        public bool ThemCaLam(ref string err, string MaCa, string MaNhanVien)
+        public bool ThemCaLam(ref string err,string MaNhanVien, string MaCa)
         {
             return db.MyExecuteNonQuery("USP_ThemCaLamNhanVien", CommandType.StoredProcedure, ref err,
-                new SqlParameter("@maca", MaCa),
-                new SqlParameter("@manhanvien", MaNhanVien));              
+                new SqlParameter("@manhanvien", MaNhanVien),
+                new SqlParameter("@maca", MaCa));              
         }
     }
 }

@@ -258,7 +258,7 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Không Thể Thêm Được Do Trùng CCCD Hoặc Mã Nhân Viên");
+                        MessageBox.Show(err);
                     }
 
                 }
@@ -287,6 +287,10 @@ namespace DoAnCuaHangDoChoi
                     // Thông báo 
                     MessageBox.Show("Đã cập nhật xong!");
                 }
+                else
+                {
+                    MessageBox.Show(err);
+                }
             }
         }
 
@@ -297,6 +301,8 @@ namespace DoAnCuaHangDoChoi
 
         private void dgvDanhSachNhanVien_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            this.rdNam.Checked = false;
+            this.rdNu.Checked = false;
             // Thứ tự dòng hiện hành 
             int r = dgvDanhSachNhanVien.CurrentCell.RowIndex;
             // Chuyển thông tin lên panel 
@@ -341,6 +347,11 @@ namespace DoAnCuaHangDoChoi
             {
                 rdNam.Checked = false;
             }
+        }
+
+        private void dgvDanhSachNhanVien_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -224,7 +224,7 @@ namespace DoAnCuaHangDoChoi
                     }
                     else
                     {
-                        MessageBox.Show("Không Thể Thêm Do Mã Hóa Đơn Nhập Đã Tồn Tại!");
+                        MessageBox.Show(err);
                     }    
 
                 }
@@ -253,7 +253,7 @@ namespace DoAnCuaHangDoChoi
                 }
                 else
                 {
-                    MessageBox.Show("Mã Nhân Viên Không Tồn Tại!");
+                    MessageBox.Show(err);
                 }    
             }
             this.btnReLoad.Enabled = true;

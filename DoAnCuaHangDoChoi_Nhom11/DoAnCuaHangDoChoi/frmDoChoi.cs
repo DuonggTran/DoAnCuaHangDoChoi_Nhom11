@@ -360,51 +360,57 @@ namespace DoAnCuaHangDoChoi
 
         private void btnLuu_Click_1(object sender, EventArgs e)
         {
-            bool kq = false;
-            string err = "";
-            // Thêm dữ liệu 
-            if (Them)
-            {
-                try
-                {
-                    kq = dcbusiness.ThemDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
-                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
-                    if (kq)
-                    {
-                        // Load lại dữ liệu trên DataGridView 
-                        LoadDoChoi();
-                        // Thông báo 
-                        MessageBox.Show("Đã thêm đồ chơi thành công!");
-                    }
-                    else
-                        MessageBox.Show(err);
+           bool kq = false;
+string err = "";
+// Thêm dữ liệu 
+if (Them)
+{
+    try
+    {
+        kq = dcbusiness.ThemDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, txtGiaTien.Text,
+            cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
+        if (kq)
+        {
+            // Load lại dữ liệu trên DataGridView 
+            LoadDoChoi();
+            // Thông báo 
+            MessageBox.Show("Đã thêm đồ chơi thành công!");
+        }
+        else
+        {
+            MessageBox.Show(err.ToString());
+        }
 
-                }
-                catch (SqlException)
-                {
-                    err = "Không thêm được đồ chơi. Lỗi rồi!";
-                    MessageBox.Show(err);
-                }
-            }
-            else
-            {
-                kq = false;
-                // Thứ tự dòng hiện hành 
-                int r = dgvDoChoi.CurrentCell.RowIndex;
-                // MaDoChoi hiện hành 
-                string strMaDoChoi =
-                dgvDoChoi.Rows[r].Cells[0].Value.ToString();
-                // Câu lệnh SQL 
-                kq = dcbusiness.CapNhatDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
-                        cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
-                if (kq)
-                {
-                    // Load lại dữ liệu trên DataGridView 
-                    LoadDoChoi();
-                    // Thông báo 
-                    MessageBox.Show("Đã cập nhật xong!");
-                }
-            }
+    }
+    catch (SqlException)
+    {
+        err = "Không thêm được đồ chơi. Lỗi rồi!";
+        MessageBox.Show(err);
+    }
+}
+else
+{
+    kq = false;
+    // Thứ tự dòng hiện hành 
+    int r = dgvDoChoi.CurrentCell.RowIndex;
+    // MaDoChoi hiện hành 
+    string strMaDoChoi =
+    dgvDoChoi.Rows[r].Cells[0].Value.ToString();
+    // Câu lệnh SQL 
+    kq = dcbusiness.CapNhatDoChoi(ref err, txtMaDoChoi.Text, txtTenDoChoi.Text, int.Parse(txtGiaTien.Text),
+            cbxMaLoaiDoChoi.Text, txtNhaSanXuat.Text, txtMaNganKe.Text);
+    if (kq)
+    {
+        // Load lại dữ liệu trên DataGridView 
+        LoadDoChoi();
+        // Thông báo 
+        MessageBox.Show("Đã cập nhật xong!");
+    }
+    else
+    {
+        MessageBox.Show(err.ToString());
+    }
+}
         }
 
         private void btnDaBan_Click_1(object sender, EventArgs e)
@@ -466,6 +472,16 @@ namespace DoAnCuaHangDoChoi
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvNganKe_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
